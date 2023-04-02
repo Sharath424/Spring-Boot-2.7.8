@@ -14,8 +14,8 @@ import org.springframework.context.ConfigurableApplicationContext;
 @SpringBootApplication
 public class FirstspringbootApplication  implements CommandLineRunner{
 	
-	@Autowired(required = false)
-	SpringDemoComponent springDemoComponent;
+//	@Autowired(required = false)
+//	SpringDemoComponent springDemoComponent;
 
 	@Value("$(server.port)")
 	private String message;
@@ -39,7 +39,7 @@ public class FirstspringbootApplication  implements CommandLineRunner{
 
 @Override
 public void run(String... args) throws Exception{
-	System.out.println(springDemoComponent.getMessage());
+//	System.out.println(springDemoComponent.getMessage());
 System.out.println("the server port is " + message);	
 }
 

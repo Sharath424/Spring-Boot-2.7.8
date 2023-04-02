@@ -2,6 +2,7 @@
 <section name="Workbench">
 	<section name="MavenProjectImportWizardPage">
 		<list key="rootDirectory">
+			<item value="E:\Spring-boot-2.7.8\Spring-boot-2.7.8\Spring-boot-2.7.8\firstspringboot"/>
 			<item value="E:\Spring\Spring-Boot\firstspringboot"/>
 			<item value="E:\Spring\Spring-Boot\Spring-Boot\firstspringboot"/>
 		</list>
