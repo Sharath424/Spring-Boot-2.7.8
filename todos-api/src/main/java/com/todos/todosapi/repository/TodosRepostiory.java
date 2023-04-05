@@ -6,4 +6,5 @@ import com.todos.todosapi.model.Todo;
 
 public interface TodosRepostiory  extends JpaRepository<Todo, Integer>{
 
+	Todo findByTodo(String description);
 }

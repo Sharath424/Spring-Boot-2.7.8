@@ -1,6 +1,7 @@
 package com.todos.todosapi.service.impl;
 
 import java.util.ArrayList;
+
 import java.util.Date;
 import java.util.List;
 
@@ -10,7 +11,7 @@ import com.todos.todosapi.exception.ResourceNotFoundException;
 import com.todos.todosapi.model.Todo;
 import com.todos.todosapi.service.TodosService;
 
-@Service
+//@Service
 public class TodoServiceInMemoryImpl implements TodosService {
 
 	private static List<Todo> todos =new ArrayList<>();

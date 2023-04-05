@@ -303,7 +303,7 @@ For example:
 
 # Bootstrapping Spring boot project
 
-## What is spring boot?
+**What is spring boot ?**
 
 Spring Boot makes it easy to create stand-alone, production-grade Spring based applications that you can "just run".
 
@@ -624,7 +624,7 @@ public class FirstspringbootApplication implements CommandLineRunner {
 
 # Creating Web Project (Rest API)
 
-## CommandLineRunner 
+**CommandLineRunner** 
 
 **Command line runner to show Dependency injection**
 
@@ -1178,7 +1178,7 @@ public class ResourceNotFoundException extends RuntimeException{
 ```
 # Unit Testing
 
-## Spring boot starter test
+**Spring boot starter test**
 
 The spring-boot-starter-test dependency provides the following test frameworks needed for unit testing: 
 
@@ -1308,6 +1308,29 @@ public interface TodosRepostiory  extends JpaRepository<Todo, Integer>{
 
 # Configuring application
 
+**Application.yml**
+
+Using YAML Instead of Properties files is better.
+
+* YAML is a superset of JSON and, as such, is a convenient format for specifying hierarchical configuration data.
+
+* The SpringApplication class automatically supports YAML as an alternative to properties whenever you have the SnakeYAML library on your classpath.
+
+* You can specify multiple profile-specific YAML documents in a single file by using a spring.profiles key to indicate when the document applies.
+
+* In addition to application.properties files, profile-specific properties can also be defined by using the following naming convention: application-{profile}.properties. 
+
+* The Environment has a set of default profiles (by default, [default]) that are used if no active profiles are set. In other words, if no profiles are explicitly activated, then properties from application-default.properties are loaded.
+
+Yml Example:
+
+You can specify multiple profile-specific YAML documents in a single file by using a spring.profiles key to indicate when the document applies, as shown in the following example:
+
+![Spring boot :yml](/images/application-yml.png)
+
+Spring YML Configuration (https://www.baeldung.com/spring-yaml)
+
+
 ## Application.properties
 
 Spring Boot provides various properties that can be configured in the application.properties file. The properties have default values. We can set a property(s) for the Spring Boot application. Spring Boot also allows us to define our own property if required.
@@ -1345,24 +1368,3 @@ logging.level.org.hibernate.type.descriptor.sql.BasicBinder=TRACE
 ```
 
 **For more Refrence** :(https://www.javatpoint.com/spring-boot-properties)
-## Application.yml
-
-Using YAML Instead of Properties files is better.
-
-* YAML is a superset of JSON and, as such, is a convenient format for specifying hierarchical configuration data.
-
-* The SpringApplication class automatically supports YAML as an alternative to properties whenever you have the SnakeYAML library on your classpath.
-
-* You can specify multiple profile-specific YAML documents in a single file by using a spring.profiles key to indicate when the document applies.
-
-* In addition to application.properties files, profile-specific properties can also be defined by using the following naming convention: application-{profile}.properties. 
-
-* The Environment has a set of default profiles (by default, [default]) that are used if no active profiles are set. In other words, if no profiles are explicitly activated, then properties from application-default.properties are loaded.
-
-Yml Example:
-
-You can specify multiple profile-specific YAML documents in a single file by using a spring.profiles key to indicate when the document applies, as shown in the following example:
-
-![Spring boot :yml](/images/application-yml.png)
-
-Spring YML Configuration (https://www.baeldung.com/spring-yaml)
