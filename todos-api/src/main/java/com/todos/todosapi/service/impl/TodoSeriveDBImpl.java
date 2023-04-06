@@ -15,7 +15,7 @@ import com.todos.todosapi.service.TodosService;
 @Service
 public class TodoSeriveDBImpl implements TodosService {
 
-	@Autowired
+	
 	private TodosRepostiory todosRepostiory;
 
 	@Override
