@@ -345,7 +345,15 @@ We can inject the dependency by setter method also. The <property> subelement of
 
 # Spring Conditional Configuration 
  
-**@ConditionOnBean**
+1. [ConditionOnBean](#conditiononbean)
+
+2. [ConditionOnProperty](#conditiononproperty)
+
+3. [ConditionOnMissingBean](#conditiononmissingbean)
+
+4. [ConditionOnClass](#conditiononclass)
+
+### ConditionOnBean
 
 @Conditional that only matches when beans meeting all the specified requirements are already contained in the BeanFactory. All the requirements must be met for the condition to match, but they do not have to be met by the same bean. 
 When placed on a @Bean method, the bean class defaults to the return type of the 
@@ -371,7 +379,7 @@ factory method:
 In the sample above the condition will match if a bean of type MyService is already contained in the BeanFactory. 
 The condition can only match the bean definitions that have been processed by the application context so far and, as such, it is strongly recommended to use this condition on auto-configuration classes only. If a candidate bean may be created by another auto-configuration, make sure that the one using this condition runs after.
 
-**@ConditionOnProperty**
+### ConditionOnProperty
 
 @Conditional that checks if the specified properties have a specific value. By default the properties must be present in the Environment and not equal to false. The havingValue() and matchIfMissing() attributes allow further customizations. 
 The havingValue attribute can be used to specify the value that the property should have. The table below shows when a condition matches according to the property value and the havingValue() attribute:
@@ -393,7 +401,7 @@ This condition cannot be reliably used for matching collection properties. For e
  }
 ```
 
-**@ConditionOnMissingBean**
+### ConditionOnMissingBean
 
 @Conditional that only matches when no beans meeting the specified requirements are already contained in the BeanFactory. None of the requirements must be met for the condition to match and the requirements do not have to be met by the same bean. 
 
@@ -415,7 +423,7 @@ When placed on a @Bean method, the bean class defaults to the return type of the
 In the sample above the condition will match if no bean of type MyService is already contained in the BeanFactory. 
 The condition can only match the bean definitions that have been processed by the application context so far and, as such, it is strongly recommended to use this condition on auto-configuration classes only. If a candidate bean may be created by another auto-configuration, make sure that the one using this condition runs after.
 
-**@ConditionOnClass**
+### ConditionOnClass
 
 @Conditional that only matches when the specified classes are on the classpath. 
 A Class value can be safely specified on @Configuration classes as the annotation metadata is parsed by using ASM before the class is loaded. This only holds true if @ConditionalOnClass is used on a class. Extra care must be taken when using @ConditionalOnClass on @Bean methods: the value attribute must not be used, instead the name attribute can be used to reference the class which must be present as a String. Alternatively create a separate @Configuration class that isolates the condition. 
