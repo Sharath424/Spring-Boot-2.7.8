@@ -14,8 +14,6 @@ import com.todos.todosapi.service.TodosService;
 
 @Service
 public class TodoSeriveDBImpl implements TodosService {
-
-	
 	private TodosRepostiory todosRepostiory;
 
 	@Override
@@ -27,9 +25,8 @@ public class TodoSeriveDBImpl implements TodosService {
 	@Override
 	public boolean deleteTodo(int id) {
 		Optional<Todo> todo = todosRepostiory.findById(id);
-		if(todo.isEmpty()) {
+		if (todo.isEmpty()) {
 			throw new ResourceNotFoundException();
-	
 		}
 		todosRepostiory.deleteById(id);
 		// TODO Auto-generated method stub
@@ -48,19 +45,18 @@ public class TodoSeriveDBImpl implements TodosService {
 	public Todo saveTodo(Todo todo) {
 		// TODO Auto-generated method stub
 		return todosRepostiory.save(todo);
- 	}
+	}
 
 	@Override
 	public Todo updateTodo(int id, Todo todo) {
 		Optional<Todo> existingTodo = todosRepostiory.findById(id);
-		if(existingTodo.isEmpty())
+		if (existingTodo.isEmpty())
 			throw new ResourceNotFoundException();
-		Todo updatedTodo =	existingTodo.get();
+		Todo updatedTodo = existingTodo.get();
 		updatedTodo.setDescription(todo.getDescription());
 		updatedTodo.setTargetDate(todo.getTargetDate());
 		updatedTodo.setDone(todo.isDone());
 		todosRepostiory.save(updatedTodo);
-		
 		return updatedTodo;
 	}
 

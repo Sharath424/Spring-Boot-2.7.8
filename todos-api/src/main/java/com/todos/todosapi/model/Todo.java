@@ -2,7 +2,6 @@ package com.todos.todosapi.model;
 
 import java.util.Date;
 
-
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -11,22 +10,19 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name="todos")
+@Table(name = "todos")
 public class Todo {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int id;
-	
-	@Column(nullable=false)
+	@Column(nullable = false)
 	private String description;
-	
 	@Column
 	private Date targetDate;
-	
 	@Column
 	private boolean done;
-	
+
 	public Todo() {
 		super();
 	}
@@ -70,7 +66,5 @@ public class Todo {
 	public void setDone(boolean done) {
 		this.done = done;
 	}
-		
-	
-	
+
 }

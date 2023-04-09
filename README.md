@@ -452,19 +452,22 @@ For example:
 
 **What is spring boot ?**
 
-Spring Boot makes it easy to create stand-alone, production-grade Spring based applications that you can "just run".
+* Spring Boot makes it easy to create stand-alone, production-grade Spring based applications that you can "just run".
 
-we take an opinionated view of the spring platform and third-party libraries so you can get started with minimum fuss. Most Spring Boot applications need very little Spring configuration
+* we take an opinionated view of the spring platform and third-party libraries so you can get started with minimum fuss. Most Spring Boot applications need very little Spring configuration
 
-Spring Boot enables developers to focus on the business logic behind their microservice.It aims to take care of all the nitty-gritty technical details involved in developing microservices.
-
+* Spring Boot enables developers to focus on the business logic behind their microservice.It aims to take care of all the nitty-gritty technical details involved in developing microservices.
+<div style="margin-left:350px;margin-top:20px;width:350px">
 ![Spring :defination-of-spring](/images/defination-of-spring.png)
+</div>
 
-## Spring Vs Spring Boot
+### Spring Vs Spring Boot
 
+<div style="margin-left:50px;margin-top:20px;">
 ![Spring :spring-vs-springboot](/images/Spring-vs-springboot.png)
+</div>
 
-## Spring Initializr
+### Spring Initializr
 
 Spring Initializr provides a lot of flexibility in creating projects. 
 You have options to do the following:
@@ -493,7 +496,7 @@ There are 3 ways to create Spring Boot project
 
 
 
-## spring-boot-starters
+### spring-boot-starters
 
 Starters are simplified dependency descriptors customized for different purposes.
 
@@ -510,7 +513,7 @@ Starters are simplified dependency descriptors customized for different purposes
 
 
 
-**Spring-boot-starter-parent**
+### Spring-boot-starter-parent
 
 * The spring-boot-starter-parent dependency is the parent POM providing dependency and plugin management for Spring Boot-based applications.
 
@@ -526,7 +529,7 @@ Starters are simplified dependency descriptors customized for different purposes
 
 ```
 
-**Spring-boot-starter-web**
+### Spring-boot-starter-web
 
 This will add Spring MVC capabilities to Spring Boot
 
@@ -540,7 +543,7 @@ This will add Spring MVC capabilities to Spring Boot
 
 ```
 
-**Spring-boot-maven-plugin**
+### Spring-boot-maven-plugin
 
 when we build applications using Spring Boot, there are a couple of situations that are possible:
 
@@ -578,10 +581,10 @@ We will start with building our first Spring Boot application.
 4. Create your first Spring Boot launch class
 
 
-**Folder structure**:
-
+### Folder structure
+<div style="margin-left:50px;margin-top:20px;">
 ![Spring :folder-of-springbootapplication](/images/folderfirstspringapplicationjava.png)
-
+</div>
 
 ### Spring Application 
 
@@ -630,34 +633,21 @@ The @SpringBootApplication annotation is a shortcut for three annotations:
 
 3. @ComponentScan: Enables scanning for Spring beans in the package of this class and all its sub packages.
 
+<div style="margin-left:50px;margin-top:20px; width:700px;">
 ![Spring :springbootapplication](/images/Springbootapplication.png)
+</div>
 
-```
-@SpringBootApplication
-public class FirstspringbootApplication  {
-	
-	public static void main(String[] args) {
-    SpringApplication.run(FirstspringbootApplication.class, args);
-    
-	}
-
-}
-
-
-```
-
+### beans loading
 Let’s see what all beans are loaded at this point
 
-* Where are these beans defined? &How are these beans created?
+* Where are these beans defined? & How are these beans created?
 
 * That's the magic of Spring auto-configuration.
 
 * Whenever we add a new dependency to a Spring Boot project, Spring Boot auto-configuration automatically tries to configure the beans based on the dependency
-**Spring-boot-application-working**
-
-![Spring :spring-boot-application-working](/images/Spring-boot-application-working.png)
 
 
+**Code for bean Loading**
 
 ```
 @SpringBootApplication
@@ -678,9 +668,13 @@ public class FirstspringbootApplication  {
 		}
 
 }
-
-
 ```
+### Spring-boot-application-working
+
+<div style="margin-left:50px;margin-top:20px;width=50px;">
+![Spring :spring-boot-application-working](/images/Spring-boot-application-working.png)
+</div>
+
 ### Anotations
 
 The @Component annotation marks a java class as a bean so the component-scanning mechanism of spring can pick it up and pull it into the application context. 
@@ -739,7 +733,7 @@ public class SpringConfig {
 ![Spring :server-port](/images/Server-port.png)
 
 
-**Code**
+### Code of server port
 
 
 ```
@@ -764,7 +758,7 @@ public class FirstspringbootApplication implements CommandLineRunner {
 
 ```
 
-**Output**:
+### Output of server port
 
 ![Spring :server-port-output](/images/server-port-output.png)
 
@@ -802,16 +796,10 @@ public class FirstspringbootApplication implements CommandLineRunner {
 
 ```
 
-**Output** :
+### Output of commandline runner 
 
 ![Spring :Command-line-runner-output](/images/command-line-runner-output.png)
 
-
-**@Autowired**:
-
-* The @Autowired annotation provides more fine-grained control over where and how autowiring should be accomplished. 
-
-* The @Autowired annotation can be used to autowire bean on the setter method just like @Required annotation, constructor, a property or methods with arbitrary names and/or multiple arguments.
 
 
 ## Starters in Spring Boot
@@ -831,6 +819,13 @@ Starters are simplified dependency descriptors customized for different purposes
 **What are the other starters**
 
 (https://www.geeksforgeeks.org/spring-boot-starters/)
+
+
+### Autowired
+
+* The @Autowired annotation provides more fine-grained control over where and how autowiring should be accomplished. 
+
+* The @Autowired annotation can be used to autowire bean on the setter method just like @Required annotation, constructor, a property or methods with arbitrary names and/or multiple arguments.
 
 
 **Autowired by Web-starter**
@@ -859,7 +854,7 @@ When we add a dependency in spring-boot-starter-web, the following beans are aut
 
 * tomcatEmbeddedServletContainerFactory: Tomcat is the default embedded servlet container for Spring Boot-based web applications
 
-**Creating a Spring firstspringproject**
+### Creating a Spring firstspringproject
 
 Tomcat server is launched on port 8080 - Tomcat started on port(s): 8080 (http).
 
@@ -883,8 +878,7 @@ Tomcat server is launched on port 8080 - Tomcat started on port(s): 8080 (http).
 
 * If we now open a browser and go to http://localhost:8080/ you will notice the default white label error page.
 
-<br>
-
+### output
 ![Spring :white-page-error](/images/white-page-error.png)
 
 
@@ -904,7 +898,7 @@ Tomcat server is launched on port 8080 - Tomcat started on port(s): 8080 (http).
 
 4. Representation: A specific way a resource can be represented. For example, the product resource can be represented using JSON, XML, or HTML. Different clients might request different representations of the resource.
 
-**Rest Constraints**
+### Rest Constraints
 
 * Client-Server: There should be a server (service provider) and a client (service consumer). This enables loose coupling and independent evolution of the server and client as new technologies emerge.
 
@@ -939,7 +933,7 @@ HTTP response status codes indicate whether a specific HTTP request has been suc
 
 ![Spring :http-staus-code](/images/http-status-code.png)
 
-**HTTP-Rest-Vocabulary**
+### HTTP-Rest-Vocabulary
 
 **HTTP Methods supported by REST**:
 
@@ -963,7 +957,7 @@ HTTP response status codes indicate whether a specific HTTP request has been suc
 
 * HEAD – Returns meta information about the request URL
 
-## Spring Boot Rest Project
+### Spring Boot Rest Project
 
 * Let's start with creating a simple REST service returning a welcome message
 
@@ -983,6 +977,7 @@ public class HelloWorldController {
 	)
 
 ```
+### Explanation
 
 * RestController: The @RestController annotation provides a combination of @ResponseBody and @Controller annotations. This is typically used to create REST Controllers.
 
@@ -1004,7 +999,7 @@ c.c.f.c.HelloController:
 ```
 * Now if you open a browser and browse to http://localhost:8081/hello
 
-**Output**
+### Output
 
 ![Spring :hello-web](/images/helloWeb.png)
 
@@ -1059,7 +1054,7 @@ public class HelloWorldController {
 
 ```
 
-**HelloWeb class** 
+### HelloWeb class 
 
 ```
 public class HelloWeb {
@@ -1085,7 +1080,7 @@ public class HelloWeb {
 	}	
 }
 ```
-**Output**:
+### Output
 
 Open a browser and go to : http://localhost:8080/helloweb
 
@@ -1117,7 +1112,7 @@ We will focus on creating REST services for a basic Todo management system. We w
 * We are exposing a couple of simple retrieve methods and a method to add a to-do.
 
 
-**Generic interaction semantics for REST resources**
+### Generic interaction semantics for REST resources
 
 HTTP specifies methods or actions for the resources. The most commonly used HTTP methods or actions are POST, GET, PUT, and DELETE. This clearly simplifies the REST API design and makes it more readable.
 
@@ -1125,12 +1120,12 @@ HTTP specifies methods or actions for the resources. The most commonly used HTTP
 
 ![Spring :http interaction](/images/Http.png)
 
-**Todos REST Mapping**
+### Todos REST Mapping
 
 Let's quickly map the services that we want to create to the appropriate request methods: 
 
 * **Retrieving a list of Todos for a given user**: This is READ. We will use GET. We will use a URI: /users/{name}/Todos. One more good practice is to use plurals for static things in the URI: users, Todo, and so on. This results in more readable URIs.
- 
+
 * **Retrieving details for a specific Todo**: Again, we will use GET. We will use a URI /users/{name}/Todos/{id}. You can see that this is consistent with the earlier URI that we decided for the list of Todos.
 
 * **Creating a Todo for a user**: For the create operation, the suggested HTTP Request method is POST. To create a new Todo, we will post to URI /users/{name}/Todos
@@ -1139,7 +1134,7 @@ Let's quickly map the services that we want to create to the appropriate request
 
 ![Spring :todo](/images/todo.png)
 
-**Todo Bean**
+### Todo Bean
 
 We have a created a simple Todo bean with the ID,  the description of the Todo, the Todo target date, and an indicator for the completion status. We added a constructor and getters for all fields.
 
@@ -1170,19 +1165,15 @@ public class Todo {
 
 ```
 
-**Todo Service**
+## Todo Service for retriving the list
 
 We have a created a simple Todo bean with the ID, the description of the Todo, the Todo target date, and an indicator for the completion status. We added a constructor and getters for all fields.
 
 ```
 @Service
 public class TodoServiceInMemoryImpl implements TodosService {
-
 	private static List<Todo> todos =new ArrayList<>();
-	
-	private static int todosCount =3;
-	
-	
+	private static int todosCount =3;	
 	static {
 		todos.add(new Todo(1,"Learn Spring Boot", new Date(),false));
 		todos.add(new Todo(2,"Learn Spring Boot", new Date(),false));
@@ -1190,57 +1181,10 @@ public class TodoServiceInMemoryImpl implements TodosService {
 			
 	}
 
-
-
 public List<Todo> getAllTodos() {
 	// TODO Auto-generated method stub
 	return todos;
 	}
-
-@Override
-public Todo getTodoById(int id) {
-	System.out.println("Loading from Static ArrayList");
-	for(Todo todo: todos) {
-		if(todo.getId()==id) {
-			return todo;
-		}
-	}
-	throw new ResourceNotFoundException();
-}
-
-@Override
-public Todo saveTodo(Todo todo) {
-	todo.setId(++todosCount);
-	todos.add(todo);
-	return todo;
-	// TODO Auto-generated method stub
-	
-}
-
-@Override
-public Todo updateTodo(int id, Todo todo) {
-	Todo existingTodo =this.getTodoById(id);
-	if(existingTodo!=null) {
-		existingTodo.setDescription(todo.getDescription());
-		existingTodo.setTargetDate(todo.getTargetDate());
-		existingTodo.setDone(todo.isDone());	
-	}
-	return existingTodo;
-	
-}
-
-
-@Override
-public boolean deleteTodo(int id) {
-	
-	for(int i=0;i< todos.size();i++) {
-		if(todos.get(i).getId()==id) {
-			todos.remove(i);
-			return true;
-		}
-	}
-	return false;
-}
 
 }
 ```
@@ -1249,7 +1193,8 @@ public boolean deleteTodo(int id) {
 
 The @Service annotation is also a specialization of the component annotation. It doesn’t currently provide any additional behavior over the @Component annotation, but it’s a good idea to use @Service @Service over @Component @Component in service in service-layer classes layer classes because it specifies intent better. Additionally, tool support and additional behavior might rely on it in the future.
 
-## Retriving the Todo List
+
+### Retriving the Todo List
 
 We will create a new RestController annotation called TodoController.
 
@@ -1274,10 +1219,189 @@ public class TodosController {
 
 * We use the @GetMapping annotation to map the Get request for the  URI to the retrieveTodos method
 
-**Output**:
+### Output
 
 ![Spring :todo-list](/images/todo-list.png)
 
+## Todo Service for retriving the list by Id
+
+
+
+```
+@Override
+public Todo getTodoById(int id) {
+	System.out.println("Loading from Static ArrayList");
+	for(Todo todo: todos) {
+		if(todo.getId()==id) {
+			return todo;
+		}
+	}
+	throw new ResourceNotFoundException();
+}
+```
+
+### GetMapping (getTodoById) 
+
+* It is basically used to read the data
+
+* Annotation Interface GetMapping. Annotation for mapping HTTP GET requests onto specific handler methods.
+
+* Specifically, @GetMapping is a composed annotation that acts as a shortcut for @RequestMapping(method = RequestMethod. GET) .
+
+```
+@GetMapping("/{id}")
+	public Todo getTodoById(@PathVariable int id) {
+		return todoService.getTodoById(id);
+	}
+```
+
+### output
+
+![Spring :todo-getById](/images/getById.png)
+
+## Service for saving the todo list
+
+```
+@Override
+public Todo saveTodo(Todo todo) {
+	todo.setId(++todosCount);
+	todos.add(todo);
+	return todo;
+	// TODO Auto-generated method stub
+	
+}
+
+
+```
+### PostMapping (saveTodo)
+
+* It is basically used to store the data.
+
+* Annotation for mapping HTTP POST requests onto specific handler methods. 
+
+* Specifically, @PostMapping is a composed annotation that acts as a shortcut for @RequestMapping(method = RequestMethod. POST) .
+
+
+```
+@PostMapping()
+	public ResponseEntity<Todo> saveTodo(@RequestBody Todo todo){
+		Todo newTodo=todoService.saveTodo(todo);
+		return new ResponseEntity<Todo>(newTodo,HttpStatus.CREATED);
+	}
+	
+```
+### output
+
+![Spring :todo-save](/images/saveTodos.png)
+
+## Service for updating the todo by Id
+
+```
+@Override
+public Todo updateTodo(int id, Todo todo) {
+	Todo existingTodo =this.getTodoById(id);
+	if(existingTodo!=null) {
+		existingTodo.setDescription(todo.getDescription());
+		existingTodo.setTargetDate(todo.getTargetDate());
+		existingTodo.setDone(todo.isDone());	
+	}
+	return existingTodo;
+	
+}
+```
+
+### PutMapping (UpdateTodo)
+
+* It is basically used for updating the data
+
+* Specifically, @PutMapping is a composed annotation that acts as a shortcut for @RequestMapping(method = RequestMethod. PUT).
+
+```
+@PutMapping("/{id}")
+	public ResponseEntity<Todo> updateTodo(@PathVariable int id,@RequestBody Todo todo){
+		Todo updatedTodo =todoService.updateTodo(id, todo);
+		return new ResponseEntity<Todo>(updatedTodo,HttpStatus.OK);
+		
+	}
+
+```
+
+### output
+
+![Spring :todo-update](/images/update-todo.png)
+
+## Service for deleting the todo by Id
+
+
+```
+@Override
+public boolean deleteTodo(int id) {
+	
+	for(int i=0;i< todos.size();i++) {
+		if(todos.get(i).getId()==id) {
+			todos.remove(i);
+			return true;
+		}
+	}
+	return false;
+}
+
+
+```
+### DeleteMapping(deleteTodoById)
+
+* The DELETE HTTP method is used to delete the resource 
+
+* @DeleteMapping annotation for mapping HTTP DELETE requests onto specific handler methods.
+
+* Specifically, @DeleteMapping is a composed annotation that acts as a shortcut for @RequestMapping(method = RequestMethod.DELETE)
+
+```
+@DeleteMapping("/{id}")
+	public ResponseEntity<String> deleteTodo(@PathVariable int id){
+	boolean result =todoService.deleteTodo(id);
+	if(!result) {
+		throw new ResourceNotFoundException();
+	}
+	return new ResponseEntity<String>("Successfully Deleted Todo",HttpStatus.OK);
+	}
+
+```
+### Output
+
+![Spring :todo-deletById](/images/delete-todo.png)
+
+
+## Developer Tools
+
+* Spring Boot provides tools that can improve the experience of developing Spring Boot applications.
+
+* Spring Boot developer tools, by default, disables the caching of view templates and static files. This enables a developer to see the changes as soon as they make them.
+
+* Another important feature is the automatic restart when any file in the classpath changes. So, the application automatically restarts in the following scenarios:
+
+1.  When we make a change to a controller or a service class
+
+2.  When we make a change to the property file
+
+### Dev Tool dependency and advantage
+
+The advantages of Spring Boot developer tools are as follows:
+
+* The developer does not need to stop and start the application each time. The application is automatically restarted as soon as there is a change.
+
+* The restart feature in Spring Boot developer tools is intelligent. It only reloads the actively developed classes. It does not reload the third-party JARs (using two different class-loaders).
+
+* Thereby, the restart when something in the application changes is much faster compared to cold-starting an application.
+
+```
+<dependency>
+<groupId>org.springframework.boot</groupId>
+<artifactId>spring-boot-devtools</artifactId>
+<optional>true</optional>
+</dependency>
+
+```
 ## Exception Handling
 
 Exception handling is one of the important parts of developing web services. 
@@ -1301,7 +1425,7 @@ public class ResourceNotFoundException extends RuntimeException{
 
 ```
 
-**Throwing a Custom Exception**
+### Throwing a Custom Exception
 
 * It's a very simple piece of code that defines ResourceNotFoundException.
 
@@ -1348,7 +1472,7 @@ The spring-boot-starter-test dependency provides the following test frameworks n
 
 ```
 
-**After adding the dependency folder structure**:
+### After adding the dependency folder structure
 
 ![Spring :testing-folder-structure](/images/testprojectstructure.png)
 
@@ -1370,6 +1494,8 @@ application/json.
 5. andExpect(status().isOk()): Expects that the status of the response is 200 (success).
 
 6. andExpect(content().string(containsString("Hello web!"))): Expects that the content of the response is equal to "Hello web!".
+
+### Code
 
 ```
 
@@ -1400,7 +1526,7 @@ public class HellpResourceControllerWebLayerTest {
 }
 ```
 
-**Output**:-
+### Output
 
 ![Spring :test-case-pass](/images/test-case-pass.png)
 
@@ -1408,48 +1534,130 @@ public class HellpResourceControllerWebLayerTest {
 
 # Adding Data JPA dependency
 
-**Starter Data JPA dependency**
+**Spring JPA**
 
-Spring Data is a high-level Spring Source project. Its purpose is to unify and easy access to the different kinds of persistence stores, both relational database systems, and NoSQL data stores.
+* The Java Persistence API (JPA) is an Object Relational Mapping (ORM) framework that’s part of the Java EE platform. 
 
-When we implement a new application, we should focus on the business logic instead of technical complexity and boilerplate code. That's why the Java Persistent API (JPA) specification and Spring Data JPA are extremely popular.
+* JPA simplifies the implementation of the data access layer by letting developers work with an object oriented API instead of writing SQL queries by hand. The most popular JPA implementations are Hibernate,EclipseLink, and OpenJPA.
 
-Spring Data JPA adds a layer on the top of JPA. It means, Spring Data JPA uses all features defined by JPA specification, especially the entity, association mappings, and JPA's query capabilities. Spring Data JPA adds its own features such as the no-code implementation of the repository pattern and the creation of database queries from the method name.
+* The Spring framework provides a Spring ORM module to integrate easily with ORM frameworks. You can also use Spring's declarative transaction management capabilities with JPA. In addition to the Spring ORM module,the Spring data portfolio project provides a consistent, Spring-based programming model for data access to relational and NoSQL datastores. 
 
-**Starter JPA dependency**
+* Spring Data integrates with most of the popular data access technologies, including JPA, MongoDB, Redis, Cassandra, Solr, ElasticSearch, etc.
+
+### Spring JPA Features
+
+* Sophisticated support to build repositories based on Spring and JPA
+
+* Support for Querydsl predicates and thus type-safe JPA queries
+
+* Transparent auditing of domain class
+
+* Pagination support, dynamic query execution, ability to integrate custom data access code
+
+* Validation of @Query annotated queries at bootstrap time
+
+* Support for XML based entity mapping
+
+* JavaConfig based repository configuration by introducing @EnableJpaRepositories.
+
+### Spring Data JPA
+
+* Spring Data is an umbrella project that provides data access support for most of the popular data access technologies—including JPA, MongoDB, Redis, Cassandra, Solr, and ElasticSearch—in a consistent programming model. 
+
+* Spring Data JPA is one of the modules for working with relational databases using JPA. 
+
+*  At times, you may need to implement the data management applications to store, edit, and delete data. For those applications, you just need to implement CRUD (Create, Read, Update, Delete) operations for entities. Instead of implementing the same CRUD operations again and again or rolling out your own generic CRUD DAO implementation. 
+
+* Spring Data provides various repository abstractions, such as CrudRepository, PagingAndSortingRepository, JpaRepository, etc. They provide out-of-the-box support for CRUD operations, as well as pagination and sorting.
+
+### JPA CRUD
+
+* JpaRepository provides several methods for CRUD operations, along with the following interesting methods: 
+
+1. long count();—Returns the total number of entities available. 
+
+2. boolean existsById(ID id);—Returns whether an entity with the given ID exists. 
+
+3. List<T> findAll(Sort sort);—Returns all entities sorted by the given options. 
+
+4. Page<T> findAll(Pageable pageable);—Returns a page of entities meeting the paging restriction provided in the Pageable object. 
+
+* Spring Data JPA not only provides CRUD operations out-of-the-box, but it also supports dynamic query generation based on the method names. 
+
+1. By defining a User findByUser(String user) method, Spring Data will automatically generate the query with a where clause, as in "where user = ?1". 
+
+2. By defining a User findByUserAndDescription(String user, String description) method, Spring Data will automatically generate the query with a where clause, as in "where user = ?1 and description=?2".
+
+(https://docs.spring.io/spring-data/jpa/docs/current/reference/html/#jpa.query-methods.query-creation)
+
+### JPA Query
+
+But sometimes you may not be able to express your criteria using method names or the method names look ugly. Spring Data provides flexibility to configure the query explicitly using the @Query annotation. 
+
+--> @Query("select u from User u where u.user=?1 and u.description=?2 and u.done=true") 
+  Todo findByUserAndDescription(String user, String description);
+
+* You can also perform data update operations using @Modifying and @Query, as follows: 
+
+--> @Modifying @Query("update User u set u.done=:done") 
+  int updateDone(@Param("done") boolean done) 
+
+Note that this example uses the named parameter :done instead of the positional parameter ?1
+
+### Starter Data JPA dependency and H2 Console
+
+* Add the dependencies needed for Spring Data JPA and H2 Database
 
 ```
 <dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-data-jpa</artifactId>
 		</dependency>
+		<dependency>
+			<groupId>com.h2database</groupId>
+			<artifactId>h2</artifactId>
+			<scope>runtime</scope>
+		</dependency>
 
 ```
 
-**Starter JPA Features**
-
-There are three main features of Spring Data JPA are as follows:
-
-* No-code repository: It is the most popular persistence-related pattern. It enables us to implement our business code on a higher abstraction level.
-
-* Reduced boilerplate code: It provides the default implementation for each method by its repository interfaces. It means that there is no longer need to implement read and write operations.
-
-* Generated Queries: Another feature of Spring Data JPA is the generation of database queries based on the method name. If the query is not too complex, we need to define a method on our repository interface with the name that starts with findBy. After defining the method, Spring parses the method name and creates a query for it. For example:
+* Update application.properties file
 
 ```
-public interface TodosRepostiory  extends JpaRepository<Todo, Integer>{
-
-	Todo findByTodo(String description);
-}
-
+spring.h2.console.enabled=true
+spring.h2.console.path=/h2-console
+spring.jpa.hibernate.ddl-auto=create
+spring.jpa.show-sql=true
 ```
-**Spring Data JPA provides three repositories are as follows**:
+### Updating the Todo bean
 
-* CrudRepository: It offers standard create, read, update, and delete It contains method like findOne(), findAll(), save(), delete(), etc.
+* Update the TODO bean with @Entity and @
 
-* PagingAndSortingRepository: It extends the CrudRepository and adds the findAll methods. It allows us to sort and retrieve the data in a paginated way.
+![Spring :updating-todo-bean](/images/updating-todo-bean.png)
 
-* JpaRepository: It is a JPA specific repository It is defined in Spring Data Jpa. It extends the both repository CrudRepository and PagingAndSortingRepository. It adds the JPA-specific methods, like flush() to trigger a flush on the persistence context.
+### Creating the Repository class
+
+* Representating around the Spring boot actuator
+
+![Spring :Spring-boot-repostiory](/images/spring-boot-repository.png)
+
+### Creating the service class
+
+<div style="width:400px;">
+![Spring :Spring-todo-service](/images/todo-service.png)
+</div>
+
+### Accessing the H2 Console
+
+* Open (http://localhost:8081/h2-console)
+
+* User jdbc:h2:mem:testdb which is the default H2 database URL
+
+![Spring :H2-console](/images/H2-console.png)
+
+### H2-Console output:
+
+![Spring :output-H2-console](/images/output-h2console.png)
 
 **For more refrence** :(https://www.javatpoint.com/spring-boot-starter-data-jpa)
 
@@ -1469,7 +1677,7 @@ Using YAML Instead of Properties files is better.
 
 * The Environment has a set of default profiles (by default, [default]) that are used if no active profiles are set. In other words, if no profiles are explicitly activated, then properties from application-default.properties are loaded.
 
-Yml Example:
+### Yml Example
 
 You can specify multiple profile-specific YAML documents in a single file by using a spring.profiles key to indicate when the document applies, as shown in the following example:
 
@@ -1488,7 +1696,7 @@ The application.properties file allows us to run an application in a different e
 
 * define our application custom configuration properties
 
-Example of application.properties:
+### Example of application.properties:
 
 ```
 server.port=8081
