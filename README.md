@@ -358,7 +358,7 @@ We can inject the dependency by setter method also. The <property> subelement of
 @Conditional that only matches when beans meeting all the specified requirements are already contained in the BeanFactory. All the requirements must be met for the condition to match, but they do not have to be met by the same bean. 
 </div>
 
-```
+```java
 
 factory method: 
  
@@ -394,7 +394,7 @@ The havingValue attribute can be used to specify the value that the property sho
 If the property is not contained in the Environment at all, the matchIfMissing() attribute is consulted. By default missing attributes do not match. 
 This condition cannot be reliably used for matching collection properties. For example, in the following configuration, the condition matches if spring.example.values is present in the Environment but does not match if spring.example.values[0] is present. 
 
-```
+```java
 
  @ConditionalOnProperty(prefix = "spring", name = "example.values")
  class ExampleAutoConfiguration {
@@ -408,7 +408,7 @@ This condition cannot be reliably used for matching collection properties. For e
 
 </div>
 
-```
+```java
  @Configuration
  public class MyAutoConfiguration {
 
@@ -433,7 +433,7 @@ A Class value can be safely specified on @Configuration classes as the annotatio
 
 For example:
 
-``` 
+```java 
  @AutoConfiguration
  public class MyAutoConfiguration {
 
@@ -621,7 +621,7 @@ The SpringApplication class can be used to Bootstrap and launch a Spring applica
 </div>
 
 
-```
+```java
 @SpringBootApplication
 public class FirstspringbootApplication  {
 	
@@ -665,7 +665,7 @@ Let’s see what all beans are loaded at this point
 
 **Code for bean Loading**
 
-```
+```java
 @SpringBootApplication
 public class FirstspringbootApplication  {
 	
@@ -701,7 +701,7 @@ The @Component annotation marks a java class as a bean so the component-scanning
 * This should print in console, which indicates this component was instantiated, we can reprint beans and validate. 
 </div>
 
-```
+```java
 @Component
 public class SpringDemoComponent {
 	
@@ -738,7 +738,7 @@ public class SpringDemoComponent {
 2. The @Bean annotation returns an object that spring should register as bean in application context. The body of the method bears the logic responsible for creating the instance
 </div>
 
-```
+```java
 @Configuration
 public class SpringConfig {
 
@@ -765,7 +765,7 @@ public class SpringConfig {
 ### Code of server port
 
 
-```
+```java
 @SpringBootApplication
 public class FirstspringbootApplication implements CommandLineRunner {
 
@@ -921,7 +921,7 @@ Interface used to indicate that a bean should run when it is contained within a 
 
 **Code Example**:
 
-```
+```java
 @SpringBootApplication
 public class FirstspringbootApplication implements CommandLineRunner {
 
@@ -1048,7 +1048,7 @@ HTTP response status codes indicate whether a specific HTTP request has been suc
 * creating a simple REST Controller method returning a string:
 </div>
 
-```
+```java
 @RestController
 public class HelloWorldController {
 
@@ -1072,13 +1072,13 @@ public class HelloWorldController {
 * Due to the latest changes in Spring boot 2.1 it’s needs the following line to be added to application.properties to see mappings of URL
 </div>
 
-```
+```java
 logging.level.org.springframework.web=trace
 ```
 
 * When you execute this Spring application you will notice :
 
-```
+```java
 2019-01-02 05:18:56.637 TRACE 8089 --- [ main] 
 s.w.s.m.m.a.RequestMappingHandlerMapping : 
 c.c.f.c.HelloController:
@@ -1094,7 +1094,7 @@ c.c.f.c.HelloController:
 
 Let’s add a new mapping and return a HelloWeb Object
 
-```
+```java
 @RestController
 public class HelloWorldController {
 	
@@ -1118,7 +1118,7 @@ public class HelloWorldController {
 ```
 or
 
-```
+```java
 @RestController
 public class HelloWorldController {
 	@Autowired
@@ -1143,7 +1143,7 @@ public class HelloWorldController {
 
 ### HelloWeb class 
 
-```
+```java
 public class HelloWeb {
 
 	private Integer id;
@@ -1232,7 +1232,7 @@ Let's quickly map the services that we want to create to the appropriate request
 
 We have a created a simple Todo bean with the ID,  the description of the Todo, the Todo target date, and an indicator for the completion status. We added a constructor and getters for all fields.
 
-```
+```java
 
 public class Todo {
 
@@ -1263,7 +1263,7 @@ public class Todo {
 
 We have a created a simple Todo bean with the ID, the description of the Todo, the Todo target date, and an indicator for the completion status. We added a constructor and getters for all fields.
 
-```
+```java
 @Service
 public class TodoServiceInMemoryImpl implements TodosService {
 	private static List<Todo> todos =new ArrayList<>();
@@ -1293,7 +1293,7 @@ The @Service annotation is also a specialization of the component annotation. It
 
 We will create a new RestController annotation called TodoController.
 
-```
+```java
 @RestController
 @RequestMapping("/api/v1/todos")
 public class TodosController {
@@ -1322,7 +1322,7 @@ public class TodosController {
 
 
 
-```
+```java
 @Override
 public Todo getTodoById(int id) {
 	System.out.println("Loading from Static ArrayList");
@@ -1343,7 +1343,7 @@ public Todo getTodoById(int id) {
 
 * Specifically, @GetMapping is a composed annotation that acts as a shortcut for @RequestMapping(method = RequestMethod. GET) .
 
-```
+```java
 @GetMapping("/{id}")
 	public Todo getTodoById(@PathVariable int id) {
 		return todoService.getTodoById(id);
@@ -1356,7 +1356,7 @@ public Todo getTodoById(int id) {
 
 ## Service for saving the todo list
 
-```
+```java
 @Override
 public Todo saveTodo(Todo todo) {
 	todo.setId(++todosCount);
@@ -1377,7 +1377,7 @@ public Todo saveTodo(Todo todo) {
 * Specifically, @PostMapping is a composed annotation that acts as a shortcut for @RequestMapping(method = RequestMethod. POST) .
 
 
-```
+```java
 @PostMapping()
 	public ResponseEntity<Todo> saveTodo(@RequestBody Todo todo){
 		Todo newTodo=todoService.saveTodo(todo);
@@ -1391,7 +1391,7 @@ public Todo saveTodo(Todo todo) {
 
 ## Service for updating the todo by Id
 
-```
+```java
 @Override
 public Todo updateTodo(int id, Todo todo) {
 	Todo existingTodo =this.getTodoById(id);
@@ -1411,7 +1411,7 @@ public Todo updateTodo(int id, Todo todo) {
 
 * Specifically, @PutMapping is a composed annotation that acts as a shortcut for @RequestMapping(method = RequestMethod. PUT).
 
-```
+```java
 @PutMapping("/{id}")
 	public ResponseEntity<Todo> updateTodo(@PathVariable int id,@RequestBody Todo todo){
 		Todo updatedTodo =todoService.updateTodo(id, todo);
@@ -1428,7 +1428,7 @@ public Todo updateTodo(int id, Todo todo) {
 ## Service for deleting the todo by Id
 
 
-```
+```java
 @Override
 public boolean deleteTodo(int id) {
 	
@@ -1451,7 +1451,7 @@ public boolean deleteTodo(int id) {
 
 * Specifically, @DeleteMapping is a composed annotation that acts as a shortcut for @RequestMapping(method = RequestMethod.DELETE)
 
-```
+```java
 @DeleteMapping("/{id}")
 	public ResponseEntity<String> deleteTodo(@PathVariable int id){
 	boolean result =todoService.deleteTodo(id);
@@ -1509,7 +1509,7 @@ It's a very simple piece of code that defines ResourceNotFoundException.
 
 * Now let's enhance our TodoController class to throw ResourceNotFoundException when a Todo with a given ID is not found:
 
-```
+```java
 @ResponseStatus(value =HttpStatus.NOT_FOUND)
 public class ResourceNotFoundException extends RuntimeException{
 
@@ -1525,8 +1525,8 @@ public class ResourceNotFoundException extends RuntimeException{
 * It's a very simple piece of code that defines ResourceNotFoundException.
 
 * Now let's enhance our TodoController class to throw ResourceNotFoundException when a Todo with a given ID is not found:
-```
 
+```java
 @ResponseStatus(value =HttpStatus.NOT_FOUND)
 public class ResourceNotFoundException extends RuntimeException{
 
@@ -1535,7 +1535,7 @@ public class ResourceNotFoundException extends RuntimeException{
 }
 ```
 
-```
+```java
 @PostMapping()
 	public ResponseEntity<Todo> saveTodo(@RequestBody Todo todo){
 		Todo newTodo=todoService.saveTodo(todo);
@@ -1592,8 +1592,7 @@ application/json.
 
 ### Code
 
-```
-
+```java
 package com.training.firstspringboot;
 
 import static org.hamcrest.CoreMatchers.containsString;
@@ -1718,7 +1717,7 @@ Note that this example uses the named parameter :done instead of the positional 
 
 * Update application.properties file
 
-```
+```java
 spring.h2.console.enabled=true
 spring.h2.console.path=/h2-console
 spring.jpa.hibernate.ddl-auto=create
@@ -1793,7 +1792,7 @@ The application.properties file allows us to run an application in a different e
 
 ### Example of application.properties:
 
-```
+```java
 server.port=8081
 logging.level.org.springframework.web=trace
 #management.endpoints .web.exposure.include=*
