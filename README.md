@@ -38,6 +38,7 @@ It was developed by Rod Johnson in 2003.(https://en.wikipedia.org/wiki/Spring_Fr
 <div style="width:450px; margin-left:180px;">
 ![Spring boot :2.8](/images/spring-history.png)
 </div>
+
 ## What is Spring
 
 
@@ -45,8 +46,6 @@ It was developed by Rod Johnson in 2003.(https://en.wikipedia.org/wiki/Spring_Fr
 * Spring is a complete and a modular framework for developing enterprise application in java
 
 * Spring framework can be user for all layer implementation for a real time appllication
-
-* Spring can be used for the development of particular layer of a real time application.
 
 * It can be thought of as a framework of frameworks because it provides support to various frameworks such as Struts, Hibernate, Tapestry, EJB, JSF, etc.
 
@@ -80,7 +79,7 @@ A framework will help us to reuse the code in the application field because it i
 
 * Simplicity - It is simple because as it in non-invasive.it uses POJO or POJI
 
-* Testability - For developing and teting Spring Server(container) is not mandatory
+* Testability - For developing and testing Spring Server(container) is not mandatory
 
 * Loose Coupling - Spring objects are loosely coupled.It will inject the object at runtime in the IOC container or application context.
 
@@ -355,8 +354,9 @@ We can inject the dependency by setter method also. The <property> subelement of
 
 ### ConditionOnBean
 
+<div style="font-size:18px; text-align:justify;">
 @Conditional that only matches when beans meeting all the specified requirements are already contained in the BeanFactory. All the requirements must be met for the condition to match, but they do not have to be met by the same bean. 
-When placed on a @Bean method, the bean class defaults to the return type of the 
+</div>
 
 ```
 
@@ -377,13 +377,13 @@ factory method:
  
 ```
 In the sample above the condition will match if a bean of type MyService is already contained in the BeanFactory. 
-The condition can only match the bean definitions that have been processed by the application context so far and, as such, it is strongly recommended to use this condition on auto-configuration classes only. If a candidate bean may be created by another auto-configuration, make sure that the one using this condition runs after.
 
 ### ConditionOnProperty
 
+<div style="font-size:18px; text-align:justify;">
 @Conditional that checks if the specified properties have a specific value. By default the properties must be present in the Environment and not equal to false. The havingValue() and matchIfMissing() attributes allow further customizations. 
 The havingValue attribute can be used to specify the value that the property should have. The table below shows when a condition matches according to the property value and the havingValue() attribute:
-
+</div>
 
 |Property value| having value= "" | having value="true" | having value ="false| havingvalue ="foo" |
 |--------------|------------------|---------------------|---------------------|--------------------|
@@ -403,9 +403,10 @@ This condition cannot be reliably used for matching collection properties. For e
 
 ### ConditionOnMissingBean
 
+<div style="font-size:18px; text-align:justify;">
 @Conditional that only matches when no beans meeting the specified requirements are already contained in the BeanFactory. None of the requirements must be met for the condition to match and the requirements do not have to be met by the same bean. 
 
-When placed on a @Bean method, the bean class defaults to the return type of the factory method: 
+</div>
 
 ```
  @Configuration
@@ -425,8 +426,10 @@ The condition can only match the bean definitions that have been processed by th
 
 ### ConditionOnClass
 
+<div style="font-size:18px; text-align:justify;">
 @Conditional that only matches when the specified classes are on the classpath. 
 A Class value can be safely specified on @Configuration classes as the annotation metadata is parsed by using ASM before the class is loaded. This only holds true if @ConditionalOnClass is used on a class. Extra care must be taken when using @ConditionalOnClass on @Bean methods: the value attribute must not be used, instead the name attribute can be used to reference the class which must be present as a String. Alternatively create a separate @Configuration class that isolates the condition. 
+</div>
 
 For example:
 
@@ -450,6 +453,8 @@ For example:
 
 # Bootstrapping Spring boot project
 
+<div style="font-size:18px; text-align:justify;">
+
 **What is spring boot ?**
 
 * Spring Boot makes it easy to create stand-alone, production-grade Spring based applications that you can "just run".
@@ -457,6 +462,8 @@ For example:
 * we take an opinionated view of the spring platform and third-party libraries so you can get started with minimum fuss. Most Spring Boot applications need very little Spring configuration
 
 * Spring Boot enables developers to focus on the business logic behind their microservice.It aims to take care of all the nitty-gritty technical details involved in developing microservices.
+</div>
+
 <div style="margin-left:350px;margin-top:20px;width:350px">
 ![Spring :defination-of-spring](/images/defination-of-spring.png)
 </div>
@@ -469,6 +476,7 @@ For example:
 
 ### Spring Initializr
 
+<div style="font-size:18px; text-align:justify;">
 Spring Initializr provides a lot of flexibility in creating projects. 
 You have options to do the following:
 
@@ -493,11 +501,12 @@ There are 3 ways to create Spring Boot project
 * Spring Tool Suite (STS)
 
 * Spring Boot CLI
-
+</div>
 
 
 ### spring-boot-starters
 
+<div style="font-size:18px; text-align:justify;">
 Starters are simplified dependency descriptors customized for different purposes.
 
 *  For example, spring-boot-starter-web is the starter for building web application, including RESTful, using Spring MVC. It uses Tomcat as the default embedded container. 
@@ -510,14 +519,17 @@ Starters are simplified dependency descriptors customized for different purposes
 
 3. spring-boot-starter-tomcat (starter project for Tomcat)
 
-
+</div>
 
 
 ### Spring-boot-starter-parent
 
+<div style="font-size:18px; text-align:justify;">
 * The spring-boot-starter-parent dependency is the parent POM providing dependency and plugin management for Spring Boot-based applications.
 
 * A spring-boot-starter-parent dependency contains the default versions of Java to use, the default versions of dependencies that Spring Boot uses, and the default configuration of the Maven plugins
+
+</div>
 
 ```
 <parent>
@@ -531,9 +543,12 @@ Starters are simplified dependency descriptors customized for different purposes
 
 ### Spring-boot-starter-web
 
+<div style="font-size:18px; text-align:justify;">
 This will add Spring MVC capabilities to Spring Boot
 
 * Helps you build Spring MVC-based web applications or RESTful applications. It uses Tomcat as the default embedded servlet container.
+
+</div>
 
 ```
 <dependency>
@@ -545,6 +560,7 @@ This will add Spring MVC capabilities to Spring Boot
 
 ### Spring-boot-maven-plugin
 
+<div style="font-size:18px; text-align:justify;">
 when we build applications using Spring Boot, there are a couple of situations that are possible:
 
 * We would want to run the applications in place without building a JAR or a WAR
@@ -552,6 +568,8 @@ when we build applications using Spring Boot, there are a couple of situations t
 * We would want to build a JAR and a WAR for later deployment
 
 * The spring-boot-maven-plugin dependency provides capabilities for both of the preceding situations. The following snippet shows how we can configure spring-boot-maven-plugin in an application:
+
+</div>
 
 ```
 <build>
@@ -566,6 +584,7 @@ when we build applications using Spring Boot, there are a couple of situations t
 ```
 ## Spring boot first basic project
 
+<div style="font-size:18px; text-align:justify;">
 We will start with building our first Spring Boot application.
 
 *  We will use Maven to manage dependencies.
@@ -579,7 +598,7 @@ We will start with building our first Spring Boot application.
 3. Configure spring-boot-maven-plugin to be able to run the application.
 
 4. Create your first Spring Boot launch class
-
+</div>
 
 ### Folder structure
 <div style="margin-left:50px;margin-top:20px;">
@@ -588,6 +607,7 @@ We will start with building our first Spring Boot application.
 
 ### Spring Application 
 
+<div style="font-size:18px; text-align:justify;">
 The SpringApplication class can be used to Bootstrap and launch a Spring application from a Java main method.
 
 * The following are the steps that are typically performed when a Spring Boot application is bootstrapped:
@@ -598,15 +618,8 @@ The SpringApplication class can be used to Bootstrap and launch a Spring applica
 
 3. Load all the Spring beans as per the configuration
 
-Classes that can be used to bootstrap and launch a Spring application from a Java main method. By default class will perform the following steps to bootstrap your application:
+</div>
 
-* Create an appropriate ApplicationContext instance
-
-* Register a CommandLinePropertySource to expose command line arguments as Spring properties 
-
-* Refresh the application context, loading all singleton beans
-
-* Trigger any CommandLineRunner beans
 
 ```
 @SpringBootApplication
@@ -623,7 +636,7 @@ public class FirstspringbootApplication  {
 
 ### @SpringBootApplication
 
-
+<div style="font-size:18px; text-align:justify;">
 
 The @SpringBootApplication annotation is a shortcut for three annotations:
 
@@ -632,12 +645,15 @@ The @SpringBootApplication annotation is a shortcut for three annotations:
 2. @EnableAutoConfiguration: Enables auto-configuration, an important feature of Spring Boot. We will discuss auto-configuration later in a separate section. 
 
 3. @ComponentScan: Enables scanning for Spring beans in the package of this class and all its sub packages.
+</div>
 
 <div style="margin-left:50px;margin-top:20px; width:700px;">
 ![Spring :springbootapplication](/images/Springbootapplication.png)
 </div>
 
 ### beans loading
+
+<div style="font-size:18px; text-align:justify;">
 Let’s see what all beans are loaded at this point
 
 * Where are these beans defined? & How are these beans created?
@@ -645,7 +661,7 @@ Let’s see what all beans are loaded at this point
 * That's the magic of Spring auto-configuration.
 
 * Whenever we add a new dependency to a Spring Boot project, Spring Boot auto-configuration automatically tries to configure the beans based on the dependency
-
+</div>
 
 **Code for bean Loading**
 
@@ -677,9 +693,13 @@ public class FirstspringbootApplication  {
 
 ### Anotations
 
+<div style="font-size:18px; text-align:justify;">
 The @Component annotation marks a java class as a bean so the component-scanning mechanism of spring can pick it up and pull it into the application context. 
 
 * To use this annotation, apply it over class as below:
+
+* This should print in console, which indicates this component was instantiated, we can reprint beans and validate. 
+</div>
 
 ```
 @Component
@@ -692,12 +712,13 @@ public class SpringDemoComponent {
 }
 
 ```
-* This should print in console, which indicates this component was instantiated, we can reprint beans and validate. 
 
 
 ### @Component Vs @bean
 
-Component and @Bean do two quite different things, and shouldn't be confused.
+<div style="font-size:18px; text-align:justify;">
+
+@Component and @Bean do two quite different things, and shouldn't be confused.
 
 * @Component (and @Service and @Repository) are used to auto-detect and auto-configure beans using classpath scanning. There's an implicit one-to-one mapping between the annotated class and the bean (i.e. one bean per class). Control of wiring is quite limited with this approach, since it's purely declarative.
 
@@ -705,11 +726,17 @@ Component and @Bean do two quite different things, and shouldn't be confused.
 
 * Component Preferable for component scanning and automatic wiring.
 
+</div>
+
+### When @Bean is used
+
+<div style="font-size:18px; text-align:justify;">
 * When should you use @Bean?
 
 1. Sometimes automatic configuration is not an option. When? Let's imagine that you want to wire components from 3rd-party libraries (you don't have the source code so you can't annotate its classes with @Component), so automatic configuration is not possible.
 
 2. The @Bean annotation returns an object that spring should register as bean in application context. The body of the method bears the logic responsible for creating the instance
+</div>
 
 ```
 @Configuration
@@ -726,9 +753,11 @@ public class SpringConfig {
 ```
 ### inject from application.properties
 
+<div style="font-size:18px; text-align:justify;">
 * Add a property and let’s inject
 
 * server port = 8081 from Spring Boot in application.properties
+</div>
 
 ![Spring :server-port](/images/Server-port.png)
 
@@ -765,11 +794,130 @@ public class FirstspringbootApplication implements CommandLineRunner {
 
 # Creating Web Project (Rest API)
 
-**CommandLineRunner** 
+<div style="font-size:18px; text-align:justify;">
+1. [Starters in spring Boot](#starters-in-spring-boot)
 
+2. [Autowired](#autowired)
+
+3. [Autowired by Web-starter](#autowired-by-web-starter)
+
+4. [Creating a Spring firstspringproject](#creating-a-spring-firstspringproject)
+
+5. [CommandLineRunner](#commandlinerunner)
+
+</div>
+
+## Starters in Spring Boot
+
+<div style="font-size:18px; text-align:justify;">
+
+Starters are simplified dependency descriptors customized for different purposes.
+
+* For example, spring-boot-starter-web is the starter for building web application, including RESTful, using Spring MVC. It uses Tomcat as the default embedded container. 
+
+* If I want to develop a web application using Spring MVC, all we would need to do is include spring-boot-starter-web in our dependencies, and we get the following automatically pre-configured:
+
+1. Spring MVC 
+
+2. Compatible versions of jackson-databind (for binding) and hibernate-validator (for form validation)
+
+3. spring-boot-starter-tomcat (starter project for Tomcat)
+
+**What are the other starters**
+
+(https://www.geeksforgeeks.org/spring-boot-starters/)
+
+</div>
+
+
+### Autowired
+
+<div style="font-size:18px; text-align:justify;">
+
+* The @Autowired annotation provides more fine-grained control over where and how autowiring should be accomplished. 
+
+* The @Autowired annotation can be used to autowire bean on the setter method just like @Required annotation, constructor, a property or methods with arbitrary names and/or multiple arguments.
+
+
+**Autowired by Web-starter**
+
+When we add a dependency in spring-boot-starter-web, the following beans are auto-configured: 
+
+* basicErrorController, handlerExceptionResolver: It is the basic exception handling. It shows a default error page when an exception occurs.
+
+* beanNameHandlerMapping: It is used to resolve paths to a handler (controller). 
+
+* characterEncodingFilter: It provides default character encoding UTF-8. – dispatcherServlet: It is the front controller in Spring MVC applications.
+</div>
+
+### Autowired by Web-starter
+
+<div style="font-size:18px; text-align:justify;">
+
+* jacksonObjectMapper: It translates objects to JSON and JSON to objects in REST services.
+
+* messageConverters: It is the default message converters to convert from objects into XML or JSON and vice versa.
+
+* multipartResolver: It provides support to upload files in web applications.
+
+* mvcValidator: It supports validation of HTTP requests. – viewResolver: It resolves a logical view name to a physical view. 
+
+* propertySourcesPlaceholderConfigurer: It supports the externalization of application configuration.
+
+* requestContextFilter: It defaults the filter for requests.
+
+* restTemplateBuilder: It is used to make calls to REST services. 
+
+* tomcatEmbeddedServletContainerFactory: Tomcat is the default embedded servlet container for Spring Boot-based web applications
+</div>
+
+### Creating a Spring firstspringproject
+
+<div style="font-size:18px; text-align:justify;">
+
+Tomcat server is launched on port 8080 - Tomcat started on port(s): 8080 (http).
+
+* DispatcherServlet is configured. This means that Spring MVC Framework is ready to accept requests--Mapping servlet: 'dispatcherServlet' to [/].
+
+* Four filters are enabled by default 
+
+1. characterEncodingFilter
+
+2. hiddenHttpMethodFilter, 
+
+3. httpPutFormContentFilter 
+
+4. requestContextFilter 
+
+</div>
+<div style="font-size:16px;">
+*  The default error page is configured
+
+1. Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>>
+
+2. org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest) 
+
+* WebJars are autoconfigured. WebJars enable dependency management for static dependencies such as Bootstrap and query--Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler] 
+</div>
+
+
+### output
+
+
+<div style="font-size:18px;">
+* If we now open a browser and go to http://localhost:8081/ you will notice the default white label error page.
+</div>
+
+![Spring :white-page-error](/images/white-page-error.png)
+
+### CommandLineRunner 
+
+
+<div style="font-size:16px;">
 **Command line runner to show Dependency injection**
 
 Interface used to indicate that a bean should run when it is contained within a SpringApplication.
+</div>
 
 **Code Example**:
 
@@ -802,90 +950,10 @@ public class FirstspringbootApplication implements CommandLineRunner {
 
 
 
-## Starters in Spring Boot
-
-Starters are simplified dependency descriptors customized for different purposes.
-
-* For example, spring-boot-starter-web is the starter for building web application, including RESTful, using Spring MVC. It uses Tomcat as the default embedded container. 
-
-* If I want to develop a web application using Spring MVC, all we would need to do is include spring-boot-starter-web in our dependencies, and we get the following automatically pre-configured:
-
-1. Spring MVC 
-
-2. Compatible versions of jackson-databind (for binding) and hibernate-validator (for form validation)
-
-3. spring-boot-starter-tomcat (starter project for Tomcat)
-
-**What are the other starters**
-
-(https://www.geeksforgeeks.org/spring-boot-starters/)
-
-
-### Autowired
-
-* The @Autowired annotation provides more fine-grained control over where and how autowiring should be accomplished. 
-
-* The @Autowired annotation can be used to autowire bean on the setter method just like @Required annotation, constructor, a property or methods with arbitrary names and/or multiple arguments.
-
-
-**Autowired by Web-starter**
-
-When we add a dependency in spring-boot-starter-web, the following beans are auto-configured: 
-
-* basicErrorController, handlerExceptionResolver: It is the basic exception handling. It shows a default error page when an exception occurs.
-
-* beanNameHandlerMapping: It is used to resolve paths to a handler (controller). 
-
-* characterEncodingFilter: It provides default character encoding UTF-8. – dispatcherServlet: It is the front controller in Spring MVC applications.
-
-* jacksonObjectMapper: It translates objects to JSON and JSON to objects in REST services.
-
-* messageConverters: It is the default message converters to convert from objects into XML or JSON and vice versa.
-
-* multipartResolver: It provides support to upload files in web applications.
-
-* mvcValidator: It supports validation of HTTP requests. – viewResolver: It resolves a logical view name to a physical view. 
-
-* propertySourcesPlaceholderConfigurer: It supports the externalization of application configuration.
-
-* requestContextFilter: It defaults the filter for requests.
-
-* restTemplateBuilder: It is used to make calls to REST services. 
-
-* tomcatEmbeddedServletContainerFactory: Tomcat is the default embedded servlet container for Spring Boot-based web applications
-
-### Creating a Spring firstspringproject
-
-Tomcat server is launched on port 8080 - Tomcat started on port(s): 8080 (http).
-
-* DispatcherServlet is configured. This means that Spring MVC Framework is ready to accept requests--Mapping servlet: 'dispatcherServlet' to [/].
-
-* Four filters are enabled by default 
-
-1. characterEncodingFilter
-
-2. hiddenHttpMethodFilter, 
-
-3. httpPutFormContentFilter – requestContextFilter -- 
-
-*  The default error page is configured—
-
-1. Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>>
-
-2. org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest) 
-
-* WebJars are autoconfigured. WebJars enable dependency management for static dependencies such as Bootstrap and query--Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler] 
-
-* If we now open a browser and go to http://localhost:8080/ you will notice the default white label error page.
-
-### output
-![Spring :white-page-error](/images/white-page-error.png)
-
-
-
-
 ## Rest
 
+
+<div style="font-size:18px;">
 **Representational State Transfer (REST)** is basically an architectural style for the web. REST specifies a set of constraints. These constraints ensure that clients (service consumers and browsers) can interact with servers in flexible ways. 
 
 * **Terminology**: 
@@ -897,9 +965,12 @@ Tomcat server is launched on port 8080 - Tomcat started on port(s): 8080 (http).
 3. Resource: Any information can be a resource: a person, an image, a video, or a product you want to sell. 
 
 4. Representation: A specific way a resource can be represented. For example, the product resource can be represented using JSON, XML, or HTML. Different clients might request different representations of the resource.
+</div>
 
 ### Rest Constraints
 
+
+<div style="font-size:17px;">
 * Client-Server: There should be a server (service provider) and a client (service consumer). This enables loose coupling and independent evolution of the server and client as new technologies emerge.
 
 * Stateless: Each service should be stateless. Subsequent requests should not depend on some data from a previous request being temporarily stored. Messages should be self-descriptive. 
@@ -914,8 +985,12 @@ Tomcat server is launched on port 8080 - Tomcat started on port(s): 8080 (http).
 
 * Hypermedia as the engine of application state (HATEOAS): The consumer of a RESTful application should know about only one fixed service URL. All subsequent resources should be discoverable from the links included in the resource representations.
 
+</div>
+
 ## HTTP Status Codes
 
+
+<div style="font-size:18px;">
 HTTP response status codes indicate whether a specific HTTP request has been successfully completed. Responses are grouped in five classes:
 
 * informational responses
@@ -929,11 +1004,16 @@ HTTP response status codes indicate whether a specific HTTP request has been suc
 * servers errors.
 
 * Go to: (https://developer.mozilla.org/en-US/docs/Web/HTTP/Status)
+</div>
 
+### Response of HTTP Status codes
 
 ![Spring :http-staus-code](/images/http-status-code.png)
 
 ### HTTP-Rest-Vocabulary
+
+
+<div style="font-size:18px;">
 
 **HTTP Methods supported by REST**:
 
@@ -957,12 +1037,16 @@ HTTP response status codes indicate whether a specific HTTP request has been suc
 
 * HEAD – Returns meta information about the request URL
 
+</div>
+
 ### Spring Boot Rest Project
 
+
+<div style="font-size:16px;">
 * Let's start with creating a simple REST service returning a welcome message
 
 * creating a simple REST Controller method returning a string:
-
+</div>
 
 ```
 @RestController
@@ -979,11 +1063,14 @@ public class HelloWorldController {
 ```
 ### Explanation
 
+
+<div style="font-size:16px;">
 * RestController: The @RestController annotation provides a combination of @ResponseBody and @Controller annotations. This is typically used to create REST Controllers.
 
 * @GetMapping("welcome"): @GetMapping is a shortcut for @RequestMapping(method = RequestMethod.GET). This annotation is a readable alternative. The method with this annotation would handle a Get request to the welcome URI.
 
 * Due to the latest changes in Spring boot 2.1 it’s needs the following line to be added to application.properties to see mappings of URL
+</div>
 
 ```
 logging.level.org.springframework.web=trace
@@ -1099,6 +1186,8 @@ Transfer-Encoding →chunked
 
 ## Todo Application
 
+
+<div style="font-size:18px;">
 We will focus on creating REST services for a basic Todo management system. We will create services for the following:
 
 – Retrieving a list of Todos for a given user
@@ -1110,18 +1199,22 @@ We will focus on creating REST services for a basic Todo management system. We w
 * To keep things simple, this service does not talk to the database. It maintains an in-memory array list of Todos. This list is initialized using a static initializer.
 
 * We are exposing a couple of simple retrieve methods and a method to add a to-do.
-
+</div>
 
 ### Generic interaction semantics for REST resources
 
+<div style="font-size:16px;">
 HTTP specifies methods or actions for the resources. The most commonly used HTTP methods or actions are POST, GET, PUT, and DELETE. This clearly simplifies the REST API design and makes it more readable.
 
 * In a RESTful system, we can easily map our CRUD actions on the resources to the appropriate HTTP methods such as POST, GET, PUT, and DELETE
+</div>
 
 ![Spring :http interaction](/images/Http.png)
 
 ### Todos REST Mapping
 
+
+<div style="font-size:18px;">
 Let's quickly map the services that we want to create to the appropriate request methods: 
 
 * **Retrieving a list of Todos for a given user**: This is READ. We will use GET. We will use a URI: /users/{name}/Todos. One more good practice is to use plurals for static things in the URI: users, Todo, and so on. This results in more readable URIs.
@@ -1129,6 +1222,7 @@ Let's quickly map the services that we want to create to the appropriate request
 * **Retrieving details for a specific Todo**: Again, we will use GET. We will use a URI /users/{name}/Todos/{id}. You can see that this is consistent with the earlier URI that we decided for the list of Todos.
 
 * **Creating a Todo for a user**: For the create operation, the suggested HTTP Request method is POST. To create a new Todo, we will post to URI /users/{name}/Todos
+</div>
 
 ## Todo Coding
 
@@ -1191,7 +1285,8 @@ public List<Todo> getAllTodos() {
 
 **@Service**
 
-The @Service annotation is also a specialization of the component annotation. It doesn’t currently provide any additional behavior over the @Component annotation, but it’s a good idea to use @Service @Service over @Component @Component in service in service-layer classes layer classes because it specifies intent better. Additionally, tool support and additional behavior might rely on it in the future.
+The @Service annotation is also a specialization of the component annotation. It doesn’t currently provide any additional behavior over the @Component annotation, but it’s a good idea to use @Service over @Component in service-layer classes  because it specifies intent better. Additionally, tool support and additional behavior might rely on it in the future.
+
 
 
 ### Retriving the Todo List
