@@ -17,6 +17,7 @@ import: https://raw.githubusercontent.com/LiaTemplates/algebrite/0.2.1/README.md
 # Spring Boot 2.7.8 
 
 ![Spring boot :2.8](/images/spring-boot.png)
+
 ## Spring History
 
 ![Spring boot :2.8](/images/rod-johnson.png)
@@ -26,6 +27,7 @@ import: https://raw.githubusercontent.com/LiaTemplates/algebrite/0.2.1/README.md
 It was developed by Rod Johnson in 2003.(https://en.wikipedia.org/wiki/Spring_Framework)
 
 ### Spring Versions
+<br>
 <div style="font-size:18px; text-align:justify;" >
 
 * The first version was written by Rod Johnson, who released the framework with the publication of his book Expert One-on-One J2EE Design and Development in October 2002. 
@@ -40,7 +42,7 @@ It was developed by Rod Johnson in 2003.(https://en.wikipedia.org/wiki/Spring_Fr
 </div>
 
 ## What is Spring
-
+<br>
 
 <!--style="font-size:20px; text-align:justify;" --> 
 * Spring is a complete and a modular framework for developing enterprise application in java
@@ -52,7 +54,7 @@ It was developed by Rod Johnson in 2003.(https://en.wikipedia.org/wiki/Spring_Fr
 * The Spring framework comprises several modules such as IOC, AOP, DAO, Context, ORM, WEB MVC etc
 
 ### What is spring Framework ?
-
+<br>
 <!--style="font-size:20px; text-align:justify;" --> 
 * Java Framework is a platform of pre-written codes used by java developers to develop the application(java or web application)
 
@@ -68,7 +70,7 @@ It was developed by Rod Johnson in 2003.(https://en.wikipedia.org/wiki/Spring_Fr
 </div>
 
 ### Why Framework 
-
+<br>
 <!--style="font-size:20px; text-align:justify;" --> 
 A framework will help us to reuse the code in the application field because it is well-tested code by 100-1000 developers and the community. That's why we always see if a framework is available if not we should write custom code.
 
@@ -76,6 +78,7 @@ A framework will help us to reuse the code in the application field because it i
 <div style="font-size:20px; text-align:justify;margin-top:50px;">
 
 **Why Spring is popular ?**
+<br>
 
 * Simplicity - It is simple because as it in non-invasive.it uses POJO or POJI
 
@@ -86,11 +89,13 @@ A framework will help us to reuse the code in the application field because it i
 </div>
 
 ### Different Java Framework
+<br>
 <div style="width:600px; margin-left: 60px;margin-top: 60px;">
 ![Spring  :java-Framework](/images/Java-Framework.png)   
 </div>
 
 ### Spring Features
+<br>
 
 <div style="font-size:18px; text-align:justify;"> 
 
@@ -120,6 +125,8 @@ A framework will help us to reuse the code in the application field because it i
 ![Spring  :Architecture](/images/spring-architecture.png)
 
 ### Spring Core Container Layer
+<br>
+
 <div style="font-size:18px; text-align:justify;">
 The Spring Core container contains core, beans, context and expression language (EL) modules. 
 
@@ -131,6 +138,7 @@ The Spring Core container contains core, beans, context and expression language 
 </div>
 
 ### AOP, Aspects and Instrumentation Layer:
+<br>
 
 <div style="font-size:18px; text-align:justify;">
 
@@ -146,6 +154,7 @@ for refrences: (https://docs.spring.io/spring-framework/docs/2.5.5/reference/aop
 
 ### Data Access / Integration Layer:
 
+<br>
 <div style="font-size:18px; text-align:justify;">
 This group comprises of JDBC, ORM, OXM, JMS and Transaction modules. These modules basically provide support to interact with the database.
 
@@ -162,6 +171,7 @@ This group comprises of JDBC, ORM, OXM, JMS and Transaction modules. These modul
 
 ### Web Layer
 
+<br>
 <div style="font-size:18px; text-align:justify;">
 This group comprises of Web, Web-Servlet, Web-Struts and Web-Portlet. These modules provide support to create web application.
 
@@ -175,12 +185,13 @@ This group comprises of Web, Web-Servlet, Web-Struts and Web-Portlet. These modu
 </div>
 
 ## Model View Controller
+<br>
 <div style="width:600px; margin-left:150px;margin-top:50px;">
 ![Spring :MVC](/images/mvc.png)   
 </div>
 
 ### MVC Explanation
-
+<br>
 <div style="font-size:18px; text-align:justify;">
 
 **Model** :- It contains the data of the application
@@ -196,6 +207,7 @@ The controller gets the request from the user, and based on the request controll
 </div>
 
 ## IOC Container
+<br>
 
 <div style="font-size:18px; text-align:justify;">
 
@@ -212,6 +224,7 @@ The controller gets the request from the user, and based on the request controll
 </div>
 
 ### Types of IOC Container
+<br>
 
 <div style="font-size:18px; text-align:justify;">
 1. **BeanFactory Container**
@@ -223,6 +236,7 @@ This container adds more enterprise-specific functionality such as the ability t
 </div>
 
 ### IOC Features
+<br>
 
 <div style="font-size:18px; text-align:justify;">
 
@@ -238,6 +252,7 @@ This container adds more enterprise-specific functionality such as the ability t
 </div>
 
 ## Dependency Injection
+<br>
 
 <div style="font-size:18px; text-align:justify;">
 Dependency injection is a fundamental aspect of the Spring framework, through which the Spring container **injects** objects into other objects or **dependencies**. Simply put, this allows for loose coupling of components and moves responsibility for managing components onto the container.
@@ -248,6 +263,7 @@ Dependency injection is a fundamental aspect of the Spring framework, through wh
 </div>
 
 ### Types Of Dependency Injection
+<br>
 
 <div style="font-size:18px; text-align:justify;">
 1. [Constructor Based Dependency Injection](#constructor-based-dependency-injection)
@@ -258,6 +274,7 @@ Dependency injection is a fundamental aspect of the Spring framework, through wh
 
 
 #### Constructor Based Dependency Injection
+<br>
 
 <div style="font-size:18px; text-align:justify;">
 Constructor-based DI is accomplished when the container invokes a class constructor with a number of arguments, each representing a dependency on the other class.
@@ -270,6 +287,7 @@ We can inject the dependency by constructor. The <constructor-arg> subelement of
 </div>
 
 #### Setter Based Dependency Injection
+<br>
 
 <div style="font-size:18px; text-align:justify;">
 
@@ -284,6 +302,7 @@ We can inject the dependency by setter method also. The <property> subelement of
 </div>
 
 ## Bean
+<br>
 
 <div style="font-size:18px; text-align:justify;">
 
@@ -303,10 +322,11 @@ We can inject the dependency by setter method also. The <property> subelement of
 </div>
 
 ### bean life cycle
+<br>
 <div style="margin-left:100px;margin-top:20px; width:600px;">
 ![Spring :bean-life-cycle](/images/bean-life-cycle.png)
 </div>
-
+<br>
 <div style="font-size:18px; text-align:justify;">
 
 * The life cycle of a Spring bean is easy to understand. When a bean is instantiated, it may be required to perform some initialization to get it into a usable state. Similarly, when the bean is no longer required and is removed from the container, some cleanup may be required.
@@ -316,7 +336,7 @@ We can inject the dependency by setter method also. The <property> subelement of
 </div>
 
 ### Bean Scope
-
+<br>
 <div style="margin-left:10px;margin-top:20px;">
 ![Spring :dispatcher](/images/bean-scope.png)
 </div>
@@ -325,7 +345,8 @@ We can inject the dependency by setter method also. The <property> subelement of
 
 ![Spring :dispatcher](/images/dispatcher.png)
 
-### DS Working 
+### Dispatcher Servlet Working 
+<br>
 
 <div style="font-size:18px; text-align:justify;">
 
@@ -343,7 +364,10 @@ We can inject the dependency by setter method also. The <property> subelement of
 </div>
 
 # Spring Conditional Configuration 
- 
+<br>
+
+
+<div style="font-size:18px; text-align:justify;">
 1. [ConditionOnBean](#conditiononbean)
 
 2. [ConditionOnProperty](#conditiononproperty)
@@ -351,8 +375,10 @@ We can inject the dependency by setter method also. The <property> subelement of
 3. [ConditionOnMissingBean](#conditiononmissingbean)
 
 4. [ConditionOnClass](#conditiononclass)
+</div>
 
 ### ConditionOnBean
+<br>
 
 <div style="font-size:18px; text-align:justify;">
 @Conditional that only matches when beans meeting all the specified requirements are already contained in the BeanFactory. All the requirements must be met for the condition to match, but they do not have to be met by the same bean. 
@@ -379,6 +405,7 @@ factory method:
 In the sample above the condition will match if a bean of type MyService is already contained in the BeanFactory. 
 
 ### ConditionOnProperty
+<br>
 
 <div style="font-size:18px; text-align:justify;">
 @Conditional that checks if the specified properties have a specific value. By default the properties must be present in the Environment and not equal to false. The havingValue() and matchIfMissing() attributes allow further customizations. 
@@ -402,6 +429,7 @@ This condition cannot be reliably used for matching collection properties. For e
 ```
 
 ### ConditionOnMissingBean
+<br>
 
 <div style="font-size:18px; text-align:justify;">
 @Conditional that only matches when no beans meeting the specified requirements are already contained in the BeanFactory. None of the requirements must be met for the condition to match and the requirements do not have to be met by the same bean. 
@@ -425,6 +453,7 @@ In the sample above the condition will match if no bean of type MyService is alr
 The condition can only match the bean definitions that have been processed by the application context so far and, as such, it is strongly recommended to use this condition on auto-configuration classes only. If a candidate bean may be created by another auto-configuration, make sure that the one using this condition runs after.
 
 ### ConditionOnClass
+<br>
 
 <div style="font-size:18px; text-align:justify;">
 @Conditional that only matches when the specified classes are on the classpath. 
@@ -452,6 +481,7 @@ For example:
 ```
 
 # Bootstrapping Spring boot project
+<br>
 
 <div style="font-size:18px; text-align:justify;">
 
@@ -469,12 +499,14 @@ For example:
 </div>
 
 ### Spring Vs Spring Boot
+<br>
 
 <div style="margin-left:50px;margin-top:20px;">
 ![Spring :spring-vs-springboot](/images/Spring-vs-springboot.png)
 </div>
 
 ### Spring Initializr
+<br>
 
 <div style="font-size:18px; text-align:justify;">
 Spring Initializr provides a lot of flexibility in creating projects. 
@@ -492,7 +524,7 @@ You have options to do the following:
 
 6. Choose the JVM language you want to use.
 
-There are 3 ways to create Spring Boot project
+**There are 3 ways to create Spring Boot project**
 
 * Spring Initializr web (https://start.spring.io/)
   
@@ -505,6 +537,7 @@ There are 3 ways to create Spring Boot project
 
 
 ### spring-boot-starters
+<br>
 
 <div style="font-size:18px; text-align:justify;">
 Starters are simplified dependency descriptors customized for different purposes.
@@ -523,6 +556,7 @@ Starters are simplified dependency descriptors customized for different purposes
 
 
 ### Spring-boot-starter-parent
+<br>
 
 <div style="font-size:18px; text-align:justify;">
 * The spring-boot-starter-parent dependency is the parent POM providing dependency and plugin management for Spring Boot-based applications.
@@ -542,6 +576,7 @@ Starters are simplified dependency descriptors customized for different purposes
 ```
 
 ### Spring-boot-starter-web
+<br>
 
 <div style="font-size:18px; text-align:justify;">
 This will add Spring MVC capabilities to Spring Boot
@@ -559,6 +594,7 @@ This will add Spring MVC capabilities to Spring Boot
 ```
 
 ### Spring-boot-maven-plugin
+<br>
 
 <div style="font-size:18px; text-align:justify;">
 when we build applications using Spring Boot, there are a couple of situations that are possible:
@@ -583,6 +619,7 @@ when we build applications using Spring Boot, there are a couple of situations t
 
 ```
 ## Spring boot first basic project
+<br>
 
 <div style="font-size:18px; text-align:justify;">
 We will start with building our first Spring Boot application.
@@ -606,6 +643,7 @@ We will start with building our first Spring Boot application.
 </div>
 
 ### Spring Application 
+<br>
 
 <div style="font-size:18px; text-align:justify;">
 The SpringApplication class can be used to Bootstrap and launch a Spring application from a Java main method.
@@ -635,6 +673,7 @@ public class FirstspringbootApplication  {
 ```
 
 ### @SpringBootApplication
+<br>
 
 <div style="font-size:18px; text-align:justify;">
 
@@ -652,6 +691,7 @@ The @SpringBootApplication annotation is a shortcut for three annotations:
 </div>
 
 ### beans loading
+<br>
 
 <div style="font-size:18px; text-align:justify;">
 Let’s see what all beans are loaded at this point
@@ -692,6 +732,7 @@ public class FirstspringbootApplication  {
 </div>
 
 ### Anotations
+<br>
 
 <div style="font-size:18px; text-align:justify;">
 The @Component annotation marks a java class as a bean so the component-scanning mechanism of spring can pick it up and pull it into the application context. 
@@ -715,6 +756,7 @@ public class SpringDemoComponent {
 
 
 ### @Component Vs @bean
+<br>
 
 <div style="font-size:18px; text-align:justify;">
 
@@ -729,6 +771,7 @@ public class SpringDemoComponent {
 </div>
 
 ### When @Bean is used
+<br>
 
 <div style="font-size:18px; text-align:justify;">
 * When should you use @Bean?
@@ -752,6 +795,7 @@ public class SpringConfig {
 
 ```
 ### inject from application.properties
+<br>
 
 <div style="font-size:18px; text-align:justify;">
 * Add a property and let’s inject
@@ -763,6 +807,7 @@ public class SpringConfig {
 
 
 ### Code of server port
+<br>
 
 
 ```java
@@ -788,11 +833,13 @@ public class FirstspringbootApplication implements CommandLineRunner {
 ```
 
 ### Output of server port
+<br>
 
 ![Spring :server-port-output](/images/server-port-output.png)
 
 
 # Creating Web Project (Rest API)
+<br>
 
 <div style="font-size:18px; text-align:justify;">
 1. [Starters in spring Boot](#starters-in-spring-boot)
@@ -808,6 +855,7 @@ public class FirstspringbootApplication implements CommandLineRunner {
 </div>
 
 ## Starters in Spring Boot
+<br>
 
 <div style="font-size:18px; text-align:justify;">
 
@@ -831,6 +879,7 @@ Starters are simplified dependency descriptors customized for different purposes
 
 
 ### Autowired
+<br>
 
 <div style="font-size:18px; text-align:justify;">
 
@@ -851,6 +900,7 @@ When we add a dependency in spring-boot-starter-web, the following beans are aut
 </div>
 
 ### Autowired by Web-starter
+<br>
 
 <div style="font-size:18px; text-align:justify;">
 
@@ -872,6 +922,7 @@ When we add a dependency in spring-boot-starter-web, the following beans are aut
 </div>
 
 ### Creating a Spring firstspringproject
+<br>
 
 <div style="font-size:18px; text-align:justify;">
 
@@ -902,7 +953,7 @@ Tomcat server is launched on port 8080 - Tomcat started on port(s): 8080 (http).
 
 
 ### output
-
+<br>
 
 <div style="font-size:18px;">
 * If we now open a browser and go to http://localhost:8081/ you will notice the default white label error page.
@@ -911,7 +962,7 @@ Tomcat server is launched on port 8080 - Tomcat started on port(s): 8080 (http).
 ![Spring :white-page-error](/images/white-page-error.png)
 
 ### CommandLineRunner 
-
+<br>
 
 <div style="font-size:16px;">
 **Command line runner to show Dependency injection**
@@ -951,7 +1002,7 @@ public class FirstspringbootApplication implements CommandLineRunner {
 
 
 ## Rest
-
+<br>
 
 <div style="font-size:18px;">
 **Representational State Transfer (REST)** is basically an architectural style for the web. REST specifies a set of constraints. These constraints ensure that clients (service consumers and browsers) can interact with servers in flexible ways. 
@@ -968,7 +1019,7 @@ public class FirstspringbootApplication implements CommandLineRunner {
 </div>
 
 ### Rest Constraints
-
+<br>
 
 <div style="font-size:17px;">
 * Client-Server: There should be a server (service provider) and a client (service consumer). This enables loose coupling and independent evolution of the server and client as new technologies emerge.
@@ -988,7 +1039,7 @@ public class FirstspringbootApplication implements CommandLineRunner {
 </div>
 
 ## HTTP Status Codes
-
+<br>
 
 <div style="font-size:18px;">
 HTTP response status codes indicate whether a specific HTTP request has been successfully completed. Responses are grouped in five classes:
@@ -1007,15 +1058,19 @@ HTTP response status codes indicate whether a specific HTTP request has been suc
 </div>
 
 ### Response of HTTP Status codes
+<br>
 
 ![Spring :http-staus-code](/images/http-status-code.png)
 
 ### HTTP-Rest-Vocabulary
+<br>
 
 
 <div style="font-size:18px;">
 
 **HTTP Methods supported by REST**:
+<br>
+
 
 * GET – Requests a resource at the request URL
 
@@ -1040,6 +1095,7 @@ HTTP response status codes indicate whether a specific HTTP request has been suc
 </div>
 
 ### Spring Boot Rest Project
+<br>
 
 
 <div style="font-size:16px;">
@@ -1062,6 +1118,7 @@ public class HelloWorldController {
 
 ```
 ### Explanation
+<br>
 
 
 <div style="font-size:16px;">
@@ -1091,6 +1148,7 @@ c.c.f.c.HelloController:
 ![Spring :hello-web](/images/helloWeb.png)
 
 ## Spring Boot Rest Project with object
+<br>
 
 Let’s add a new mapping and return a HelloWeb Object
 
@@ -1168,10 +1226,11 @@ public class HelloWeb {
 }
 ```
 ### Output
+<br>
 
 Open a browser and go to : http://localhost:8080/helloweb
 
-```
+```Java
 Content-Type →application/json;charset=UTF-8
 Date →Mon, 02 Apr 2018 07:43:38 GMT
 Transfer-Encoding →chunked
@@ -1185,7 +1244,7 @@ Transfer-Encoding →chunked
 * Again, it's the magic of Spring Boot auto-configuration. If Jackson is on the classpath of an application, instances of the default object to JSON (and vice versa) converters are auto-configured by Spring Boot.
 
 ## Todo Application
-
+<br>
 
 <div style="font-size:18px;">
 We will focus on creating REST services for a basic Todo management system. We will create services for the following:
@@ -1212,7 +1271,7 @@ HTTP specifies methods or actions for the resources. The most commonly used HTTP
 ![Spring :http interaction](/images/Http.png)
 
 ### Todos REST Mapping
-
+<br>
 
 <div style="font-size:18px;">
 Let's quickly map the services that we want to create to the appropriate request methods: 
@@ -1229,6 +1288,7 @@ Let's quickly map the services that we want to create to the appropriate request
 ![Spring :todo](/images/todo.png)
 
 ### Todo Bean
+<br>
 
 We have a created a simple Todo bean with the ID,  the description of the Todo, the Todo target date, and an indicator for the completion status. We added a constructor and getters for all fields.
 
@@ -1260,6 +1320,7 @@ public class Todo {
 ```
 
 ## Todo Service for retriving the list
+<br>
 
 We have a created a simple Todo bean with the ID, the description of the Todo, the Todo target date, and an indicator for the completion status. We added a constructor and getters for all fields.
 
@@ -1290,6 +1351,7 @@ The @Service annotation is also a specialization of the component annotation. It
 
 
 ### Retriving the Todo List
+<br>
 
 We will create a new RestController annotation called TodoController.
 
@@ -1336,12 +1398,14 @@ public Todo getTodoById(int id) {
 ```
 
 ### GetMapping (getTodoById) 
+<br>
 
 * It is basically used to read the data
 
 * Annotation Interface GetMapping. Annotation for mapping HTTP GET requests onto specific handler methods.
 
 * Specifically, @GetMapping is a composed annotation that acts as a shortcut for @RequestMapping(method = RequestMethod. GET) .
+<br>
 
 ```java
 @GetMapping("/{id}")
@@ -1355,6 +1419,7 @@ public Todo getTodoById(int id) {
 ![Spring :todo-getById](/images/getById.png)
 
 ## Service for saving the todo list
+<br>
 
 ```java
 @Override
@@ -1369,12 +1434,14 @@ public Todo saveTodo(Todo todo) {
 
 ```
 ### PostMapping (saveTodo)
+<br>
 
 * It is basically used to store the data.
 
 * Annotation for mapping HTTP POST requests onto specific handler methods. 
 
 * Specifically, @PostMapping is a composed annotation that acts as a shortcut for @RequestMapping(method = RequestMethod. POST) .
+<br>
 
 
 ```java
@@ -1390,6 +1457,7 @@ public Todo saveTodo(Todo todo) {
 ![Spring :todo-save](/images/saveTodos.png)
 
 ## Service for updating the todo by Id
+<br>
 
 ```java
 @Override
@@ -1406,10 +1474,12 @@ public Todo updateTodo(int id, Todo todo) {
 ```
 
 ### PutMapping (UpdateTodo)
+<br>
 
 * It is basically used for updating the data
 
 * Specifically, @PutMapping is a composed annotation that acts as a shortcut for @RequestMapping(method = RequestMethod. PUT).
+<br>
 
 ```java
 @PutMapping("/{id}")
@@ -1444,12 +1514,14 @@ public boolean deleteTodo(int id) {
 
 ```
 ### DeleteMapping(deleteTodoById)
+<br>
 
 * The DELETE HTTP method is used to delete the resource 
 
 * @DeleteMapping annotation for mapping HTTP DELETE requests onto specific handler methods.
 
 * Specifically, @DeleteMapping is a composed annotation that acts as a shortcut for @RequestMapping(method = RequestMethod.DELETE)
+<br>
 
 ```java
 @DeleteMapping("/{id}")
@@ -1468,6 +1540,7 @@ public boolean deleteTodo(int id) {
 
 
 ## Developer Tools
+<br>
 
 * Spring Boot provides tools that can improve the experience of developing Spring Boot applications.
 
@@ -1480,6 +1553,7 @@ public boolean deleteTodo(int id) {
 2.  When we make a change to the property file
 
 ### Dev Tool dependency and advantage
+<br>
 
 The advantages of Spring Boot developer tools are as follows:
 
@@ -1498,6 +1572,7 @@ The advantages of Spring Boot developer tools are as follows:
 
 ```
 ## Exception Handling
+<br>
 
 Exception handling is one of the important parts of developing web services. 
 
@@ -1508,6 +1583,7 @@ When something goes wrong, we would want to return a good description of what we
 It's a very simple piece of code that defines ResourceNotFoundException.
 
 * Now let's enhance our TodoController class to throw ResourceNotFoundException when a Todo with a given ID is not found:
+<br>
 
 ```java
 @ResponseStatus(value =HttpStatus.NOT_FOUND)
@@ -1521,6 +1597,7 @@ public class ResourceNotFoundException extends RuntimeException{
 ```
 
 ### Throwing a Custom Exception
+<br>
 
 * It's a very simple piece of code that defines ResourceNotFoundException.
 
@@ -1534,6 +1611,7 @@ public class ResourceNotFoundException extends RuntimeException{
 	private static final long serialVersionUID = -1708853263336663516L;
 }
 ```
+<br>
 
 ```java
 @PostMapping()
@@ -1545,6 +1623,7 @@ public class ResourceNotFoundException extends RuntimeException{
 # Unit Testing
 
 **Spring boot starter test**
+<br>
 
 The spring-boot-starter-test dependency provides the following test frameworks needed for unit testing: 
 
@@ -1572,6 +1651,7 @@ The spring-boot-starter-test dependency provides the following test frameworks n
 ![Spring :testing-folder-structure](/images/testprojectstructure.png)
 
 ## Unit Testing using MockMVC
+<br>
 
 we will launch up a Mock MVC instance with HelloController. A few quick things to note are 
 as follows:
@@ -1591,6 +1671,7 @@ application/json.
 6. andExpect(content().string(containsString("Hello web!"))): Expects that the content of the response is equal to "Hello web!".
 
 ### Code
+<br>
 
 ```java
 package com.training.firstspringboot;
@@ -1627,6 +1708,7 @@ public class HellpResourceControllerWebLayerTest {
 
 
 # Adding Data JPA dependency
+<br>
 
 **Spring JPA**
 
@@ -1639,6 +1721,7 @@ public class HellpResourceControllerWebLayerTest {
 * Spring Data integrates with most of the popular data access technologies, including JPA, MongoDB, Redis, Cassandra, Solr, ElasticSearch, etc.
 
 ### Spring JPA Features
+<br>
 
 * Sophisticated support to build repositories based on Spring and JPA
 
@@ -1655,6 +1738,7 @@ public class HellpResourceControllerWebLayerTest {
 * JavaConfig based repository configuration by introducing @EnableJpaRepositories.
 
 ### Spring Data JPA
+<br>
 
 * Spring Data is an umbrella project that provides data access support for most of the popular data access technologies—including JPA, MongoDB, Redis, Cassandra, Solr, and ElasticSearch—in a consistent programming model. 
 
@@ -1665,6 +1749,7 @@ public class HellpResourceControllerWebLayerTest {
 * Spring Data provides various repository abstractions, such as CrudRepository, PagingAndSortingRepository, JpaRepository, etc. They provide out-of-the-box support for CRUD operations, as well as pagination and sorting.
 
 ### JPA CRUD
+<br>
 
 * JpaRepository provides several methods for CRUD operations, along with the following interesting methods: 
 
@@ -1685,6 +1770,7 @@ public class HellpResourceControllerWebLayerTest {
 (https://docs.spring.io/spring-data/jpa/docs/current/reference/html/#jpa.query-methods.query-creation)
 
 ### JPA Query
+<br>
 
 But sometimes you may not be able to express your criteria using method names or the method names look ugly. Spring Data provides flexibility to configure the query explicitly using the @Query annotation. 
 
@@ -1699,6 +1785,7 @@ But sometimes you may not be able to express your criteria using method names or
 Note that this example uses the named parameter :done instead of the positional parameter ?1
 
 ### Starter Data JPA dependency and H2 Console
+<br>
 
 * Add the dependencies needed for Spring Data JPA and H2 Database
 
@@ -1724,24 +1811,28 @@ spring.jpa.hibernate.ddl-auto=create
 spring.jpa.show-sql=true
 ```
 ### Updating the Todo bean
+<br>
 
 * Update the TODO bean with @Entity and @
 
 ![Spring :updating-todo-bean](/images/updating-todo-bean.png)
 
 ### Creating the Repository class
+<br>
 
 * Representating around the Spring boot actuator
 
 ![Spring :Spring-boot-repostiory](/images/spring-boot-repository.png)
 
 ### Creating the service class
+<br>
 
 <div style="width:400px;">
 ![Spring :Spring-todo-service](/images/todo-service.png)
 </div>
 
 ### Accessing the H2 Console
+<br>
 
 * Open (http://localhost:8081/h2-console)
 
@@ -1750,12 +1841,14 @@ spring.jpa.show-sql=true
 ![Spring :H2-console](/images/H2-console.png)
 
 ### H2-Console output:
+<br>
 
 ![Spring :output-H2-console](/images/output-h2console.png)
 
 **For more refrence** :(https://www.javatpoint.com/spring-boot-starter-data-jpa)
 
 # Configuring application
+<br>
 
 **Application.yml**
 
@@ -1772,6 +1865,7 @@ Using YAML Instead of Properties files is better.
 * The Environment has a set of default profiles (by default, [default]) that are used if no active profiles are set. In other words, if no profiles are explicitly activated, then properties from application-default.properties are loaded.
 
 ### Yml Example
+<br>
 
 You can specify multiple profile-specific YAML documents in a single file by using a spring.profiles key to indicate when the document applies, as shown in the following example:
 
@@ -1780,7 +1874,8 @@ You can specify multiple profile-specific YAML documents in a single file by usi
 Spring YML Configuration (https://www.baeldung.com/spring-yaml)
 
 
-## Application.properties
+### Application.properties
+<br>
 
 Spring Boot provides various properties that can be configured in the application.properties file. The properties have default values. We can set a property(s) for the Spring Boot application. Spring Boot also allows us to define our own property if required.
 
@@ -1791,6 +1886,7 @@ The application.properties file allows us to run an application in a different e
 * define our application custom configuration properties
 
 ### Example of application.properties:
+<br>
 
 ```java
 server.port=8081
