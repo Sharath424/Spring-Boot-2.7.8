@@ -8,28 +8,37 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
 
-@Entity
-@Table(name = "todos")
+//@Entity
+//@Table(name = "todos")
 public class Todo {
 
-	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
+//	@Id
+//	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int id;
-	@Column(nullable = false)
+//	@Column(nullable = false)
+	
+	@NotNull
+	private String user;
+	
+	@Size(min=9,message="Enter atleast 10 characters")
 	private String description;
-	@Column
+//	@Column
+	
 	private Date targetDate;
-	@Column
+//	@Column
 	private boolean done;
 
 	public Todo() {
 		super();
 	}
 
-	public Todo(int id, String description, Date targetDate, boolean done) {
+	public Todo(int id,String user, String description, Date targetDate, boolean done) {
 		super();
 		this.id = id;
+		this.user=user;
 		this.description = description;
 		this.targetDate = targetDate;
 		this.done = done;
@@ -41,6 +50,14 @@ public class Todo {
 
 	public void setId(int id) {
 		this.id = id;
+	}
+
+	public String getUser() {
+		return user;
+	}
+
+	public void setUser(String user) {
+		this.user = user;
 	}
 
 	public String getDescription() {

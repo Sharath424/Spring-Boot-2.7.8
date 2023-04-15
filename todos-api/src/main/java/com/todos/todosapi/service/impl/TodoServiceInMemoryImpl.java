@@ -11,7 +11,7 @@ import com.todos.todosapi.exception.ResourceNotFoundException;
 import com.todos.todosapi.model.Todo;
 import com.todos.todosapi.service.TodosService;
 
-//@Service
+@Service
 public class TodoServiceInMemoryImpl implements TodosService {
 
 	private static List<Todo> todos =new ArrayList<>();
@@ -20,9 +20,9 @@ public class TodoServiceInMemoryImpl implements TodosService {
 	
 	
 	static {
-		todos.add(new Todo(1,"Learn Spring Boot", new Date(),false));
-		todos.add(new Todo(2,"Learn Spring Boot", new Date(),false));
-		todos.add(new Todo(3,"Learn Spring Boot", new Date(),false));
+		todos.add(new Todo(1,"user1","Learn Spring Boot", new Date(),false));
+		todos.add(new Todo(2,"user2","Learn Spring Boot", new Date(),false));
+		todos.add(new Todo(3,"user3","Learn Spring Boot", new Date(),false));
 			
 	}
 
@@ -57,6 +57,7 @@ public Todo saveTodo(Todo todo) {
 public Todo updateTodo(int id, Todo todo) {
 	Todo existingTodo =this.getTodoById(id);
 	if(existingTodo!=null) {
+		existingTodo.setUser(todo.getUser());
 		existingTodo.setDescription(todo.getDescription());
 		existingTodo.setTargetDate(todo.getTargetDate());
 		existingTodo.setDone(todo.isDone());	

@@ -5,7 +5,7 @@ import org.springframework.stereotype.Repository;
 
 import com.todos.todosapi.model.Todo;
 
-@Repository
+//@Repository
 public interface TodosRepostiory  extends JpaRepository<Todo, Integer>{
 
 	Todo findByTodo(String description);

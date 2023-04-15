@@ -16,11 +16,11 @@ import: https://raw.githubusercontent.com/LiaTemplates/algebrite/0.2.1/README.md
 -->
 # Spring Boot 2.7.8 
 
-![Spring boot :2.8](/images/spring-boot.png)
+![Spring boot :2.8](images/spring-boot.png)
 
 ## Spring History
 
-![Spring boot :2.8](/images/rod-johnson.png)
+![Spring boot :2.8](images/rod-johnson.png)
 
 
 <!--style="font-size:20px; text-align:justify;" --> 
@@ -38,7 +38,8 @@ It was developed by Rod Johnson in 2003.(https://en.wikipedia.org/wiki/Spring_Fr
 * Notable improvements in Spring 4.0 included support for Java SE (Standard Edition) 8, Groovy 2, some aspects of Java EE 7, and WebSocket.
 </div>
 <div style="width:450px; margin-left:180px;">
-![Spring boot :2.8](/images/spring-history.png)
+
+![Spring boot :2.8](images/spring-history.png)
 </div>
 
 ## What is Spring
@@ -61,7 +62,7 @@ It was developed by Rod Johnson in 2003.(https://en.wikipedia.org/wiki/Spring_Fr
 * Java Framework Principle abides the hollywood principle that is **Don't call us ,we'll call you**.Also called inversion of flow or inverstion of Control
 
 <div style="width:450px; margin-left:180px;">
-![Spring  :java-Framework-Principle](/images/Java-Framework-principle.png)   
+![Spring  :java-Framework-Principle](images/Java-Framework-principle.png)   
 </div>
 
 
@@ -91,7 +92,8 @@ A framework will help us to reuse the code in the application field because it i
 ### Different Java Framework
 <br>
 <div style="width:600px; margin-left: 60px;margin-top: 60px;">
-![Spring  :java-Framework](/images/Java-Framework.png)   
+
+![Spring  :java-Framework](images/Java-Framework.png)   
 </div>
 
 ### Spring Features
@@ -116,13 +118,13 @@ A framework will help us to reuse the code in the application field because it i
 
 ### Spring Framework Ecosystem
 
-![Spring  :Ecosystem](/images/spring-eco.png)
+![Spring  :Ecosystem](images/spring-eco.png)
 
 **For More reference** :(https://springtutorials.com/spring-ecosystem/)
 
 ## Spring Architecture/Module
 
-![Spring  :Architecture](/images/spring-architecture.png)
+![Spring  :Architecture](images/spring-architecture.png)
 
 ### Spring Core Container Layer
 <br>
@@ -187,7 +189,7 @@ This group comprises of Web, Web-Servlet, Web-Struts and Web-Portlet. These modu
 ## Model View Controller
 <br>
 <div style="width:600px; margin-left:150px;margin-top:50px;">
-![Spring :MVC](/images/mvc.png)   
+![Spring :MVC](images/mvc.png)   
 </div>
 
 ### MVC Explanation
@@ -220,7 +222,7 @@ The controller gets the request from the user, and based on the request controll
 
 </div>
 <div style="width:300px; margin-left:250px;">
-![Spring :IOC-container](/images/ioc-container.png)  
+![Spring :IOC-container](images/ioc-container.png)  
 </div>
 
 ### Types of IOC Container
@@ -248,7 +250,7 @@ This container adds more enterprise-specific functionality such as the ability t
 </div>
 
 <div style="margin-left:50px;margin-top:50px; width:600px;">
-![Spring :IOC-Features](/images/ioc-features.png)  
+![Spring :IOC-Features](images/ioc-features.png)  
 </div>
 
 ## Dependency Injection
@@ -259,7 +261,7 @@ Dependency injection is a fundamental aspect of the Spring framework, through wh
 </div>
 
 <div style="margin-left:100px;margin-top:50px; width:600px;">
-![Spring :Dependency-injection](/images/dependenc-injection.png)
+![Spring :Dependency-injection](images/dependenc-injection.png)
 </div>
 
 ### Types Of Dependency Injection
@@ -270,7 +272,7 @@ Dependency injection is a fundamental aspect of the Spring framework, through wh
 2. [Setter Based Dependency Injection](#setter-based-dependency-injection)
 </div>
 
-![Spring :types-of-dependency](/images/types-of-dependency.png)
+![Spring :types-of-dependency](images/types-of-dependency.png)
 
 
 #### Constructor Based Dependency Injection
@@ -324,11 +326,12 @@ We can inject the dependency by setter method also. The <property> subelement of
 ### bean life cycle
 <br>
 <div style="margin-left:100px;margin-top:20px; width:600px;">
-![Spring :bean-life-cycle](/images/bean-life-cycle.png)
+![Spring :bean-life-cycle](images/bean-life-cycle.png)
 </div>
-<br>
-<div style="font-size:18px; text-align:justify;">
 
+<br>
+
+<div style="font-size:18px; text-align:justify;">
 * The life cycle of a Spring bean is easy to understand. When a bean is instantiated, it may be required to perform some initialization to get it into a usable state. Similarly, when the bean is no longer required and is removed from the container, some cleanup may be required.
 
 * To define setup and teardown for a bean, we simply declare the <bean> with initmethod and/or destroy-method parameters. The init-method attribute specifies a method that is to be called on the bean immediately upon instantiation. Similarly, destroymethod specifies a method that is called just before a bean is removed from the container.
@@ -338,12 +341,12 @@ We can inject the dependency by setter method also. The <property> subelement of
 ### Bean Scope
 <br>
 <div style="margin-left:10px;margin-top:20px;">
-![Spring :dispatcher](/images/bean-scope.png)
+![Spring :dispatcher](images/bean-scope.png)
 </div>
 
 ## Dispatcher Servlet
 
-![Spring :dispatcher](/images/dispatcher.png)
+![Spring :dispatcher](images/dispatcher.png)
 
 ### Dispatcher Servlet Working 
 <br>
@@ -360,7 +363,7 @@ We can inject the dependency by setter method also. The <property> subelement of
 
 <div style="margin-left:100px;margin-top:20px;width:350px">
 
-![Spring :dispatcher](/images/dispatcher-servlet.png)
+![Spring :dispatcher](images/dispatcher-servlet.png)
 </div>
 
 # Spring Conditional Configuration 
@@ -495,14 +498,14 @@ For example:
 </div>
 
 <div style="margin-left:350px;margin-top:20px;width:350px">
-![Spring :defination-of-spring](/images/defination-of-spring.png)
+![Spring :defination-of-spring](images/defination-of-spring.png)
 </div>
 
 ### Spring Vs Spring Boot
 <br>
 
 <div style="margin-left:50px;margin-top:20px;">
-![Spring :spring-vs-springboot](/images/Spring-vs-springboot.png)
+![Spring :spring-vs-springboot](images/Spring-vs-springboot.png)
 </div>
 
 ### Spring Initializr
@@ -639,7 +642,7 @@ We will start with building our first Spring Boot application.
 
 ### Folder structure
 <div style="margin-left:50px;margin-top:20px;">
-![Spring :folder-of-springbootapplication](/images/folderfirstspringapplicationjava.png)
+![Spring :folder-of-springbootapplication](images/folderfirstspringapplicationjava.png)
 </div>
 
 ### Spring Application 
@@ -687,7 +690,7 @@ The @SpringBootApplication annotation is a shortcut for three annotations:
 </div>
 
 <div style="margin-left:50px;margin-top:20px; width:700px;">
-![Spring :springbootapplication](/images/Springbootapplication.png)
+![Spring :springbootapplication](images/Springbootapplication.png)
 </div>
 
 ### beans loading
@@ -728,7 +731,7 @@ public class FirstspringbootApplication  {
 ### Spring-boot-application-working
 
 <div style="margin-left:50px;margin-top:20px;width=50px;">
-![Spring :spring-boot-application-working](/images/Spring-boot-application-working.png)
+![Spring :spring-boot-application-working](images/Spring-boot-application-working.png)
 </div>
 
 ### Anotations
@@ -803,7 +806,7 @@ public class SpringConfig {
 * server port = 8081 from Spring Boot in application.properties
 </div>
 
-![Spring :server-port](/images/Server-port.png)
+![Spring :server-port](images/Server-port.png)
 
 
 ### Code of server port
@@ -835,7 +838,7 @@ public class FirstspringbootApplication implements CommandLineRunner {
 ### Output of server port
 <br>
 
-![Spring :server-port-output](/images/server-port-output.png)
+![Spring :server-port-output](images/server-port-output.png)
 
 
 # Creating Web Project (Rest API)
@@ -959,7 +962,7 @@ Tomcat server is launched on port 8080 - Tomcat started on port(s): 8080 (http).
 * If we now open a browser and go to http://localhost:8081/ you will notice the default white label error page.
 </div>
 
-![Spring :white-page-error](/images/white-page-error.png)
+![Spring :white-page-error](images/white-page-error.png)
 
 ### CommandLineRunner 
 <br>
@@ -997,7 +1000,7 @@ public class FirstspringbootApplication implements CommandLineRunner {
 
 ### Output of commandline runner 
 
-![Spring :Command-line-runner-output](/images/command-line-runner-output.png)
+![Spring :Command-line-runner-output](images/command-line-runner-output.png)
 
 
 
@@ -1060,7 +1063,7 @@ HTTP response status codes indicate whether a specific HTTP request has been suc
 ### Response of HTTP Status codes
 <br>
 
-![Spring :http-staus-code](/images/http-status-code.png)
+![Spring :http-staus-code](images/http-status-code.png)
 
 ### HTTP-Rest-Vocabulary
 <br>
@@ -1145,7 +1148,7 @@ c.c.f.c.HelloController:
 
 ### Output
 
-![Spring :hello-web](/images/helloWeb.png)
+![Spring :hello-web](images/helloWeb.png)
 
 ## Spring Boot Rest Project with object
 <br>
@@ -1236,7 +1239,7 @@ Date →Mon, 02 Apr 2018 07:43:38 GMT
 Transfer-Encoding →chunked
 ```
 
-![Spring :hello-web-object](/images/hello-webjson.png)
+![Spring :hello-web-object](images/hello-webjson.png)
 
 
 * As observered with out any intervention Spring Web starter is allowing us to create JSON responses from Java Objects
@@ -1268,7 +1271,7 @@ HTTP specifies methods or actions for the resources. The most commonly used HTTP
 * In a RESTful system, we can easily map our CRUD actions on the resources to the appropriate HTTP methods such as POST, GET, PUT, and DELETE
 </div>
 
-![Spring :http interaction](/images/Http.png)
+![Spring :http interaction](images/Http.png)
 
 ### Todos REST Mapping
 <br>
@@ -1285,7 +1288,9 @@ Let's quickly map the services that we want to create to the appropriate request
 
 ## Todo Coding
 
-![Spring :todo](/images/todo.png)
+<br>
+
+![Spring :todo](images/todo.png)
 
 ### Todo Bean
 <br>
@@ -1378,7 +1383,7 @@ public class TodosController {
 
 ### Output
 
-![Spring :todo-list](/images/todo-list.png)
+![Spring :todo-list](images/todo-list.png)
 
 ## Todo Service for retriving the list by Id
 
@@ -1400,11 +1405,15 @@ public Todo getTodoById(int id) {
 ### GetMapping (getTodoById) 
 <br>
 
+<div style="font-size:18px;">
+
 * It is basically used to read the data
 
 * Annotation Interface GetMapping. Annotation for mapping HTTP GET requests onto specific handler methods.
 
 * Specifically, @GetMapping is a composed annotation that acts as a shortcut for @RequestMapping(method = RequestMethod. GET) .
+</div>
+
 <br>
 
 ```java
@@ -1416,7 +1425,7 @@ public Todo getTodoById(int id) {
 
 ### output
 
-![Spring :todo-getById](/images/getById.png)
+![Spring :todo-getById](images/getById.png)
 
 ## Service for saving the todo list
 <br>
@@ -1436,11 +1445,15 @@ public Todo saveTodo(Todo todo) {
 ### PostMapping (saveTodo)
 <br>
 
+<div style="font-size:18px;">
+
 * It is basically used to store the data.
 
 * Annotation for mapping HTTP POST requests onto specific handler methods. 
 
 * Specifically, @PostMapping is a composed annotation that acts as a shortcut for @RequestMapping(method = RequestMethod. POST) .
+</div>
+
 <br>
 
 
@@ -1454,7 +1467,7 @@ public Todo saveTodo(Todo todo) {
 ```
 ### output
 
-![Spring :todo-save](/images/saveTodos.png)
+![Spring :todo-save](images/saveTodos.png)
 
 ## Service for updating the todo by Id
 <br>
@@ -1476,9 +1489,13 @@ public Todo updateTodo(int id, Todo todo) {
 ### PutMapping (UpdateTodo)
 <br>
 
+<div style="font-size:18px;">
+
 * It is basically used for updating the data
 
 * Specifically, @PutMapping is a composed annotation that acts as a shortcut for @RequestMapping(method = RequestMethod. PUT).
+</div>
+
 <br>
 
 ```java
@@ -1493,7 +1510,7 @@ public Todo updateTodo(int id, Todo todo) {
 
 ### output
 
-![Spring :todo-update](/images/update-todo.png)
+![Spring :todo-update](images/update-todo.png)
 
 ## Service for deleting the todo by Id
 
@@ -1516,11 +1533,15 @@ public boolean deleteTodo(int id) {
 ### DeleteMapping(deleteTodoById)
 <br>
 
+<div style="font-size:18px;">
+
 * The DELETE HTTP method is used to delete the resource 
 
 * @DeleteMapping annotation for mapping HTTP DELETE requests onto specific handler methods.
 
 * Specifically, @DeleteMapping is a composed annotation that acts as a shortcut for @RequestMapping(method = RequestMethod.DELETE)
+</div>
+
 <br>
 
 ```java
@@ -1536,11 +1557,162 @@ public boolean deleteTodo(int id) {
 ```
 ### Output
 
-![Spring :todo-deletById](/images/delete-todo.png)
+![Spring :todo-deletById](images/delete-todo.png)
+
+## Swagger
+
+Swagger UI to generate interactive API documentation that lets your users try out the API calls directly in the browser.
+
+**To access swagger dependency**:
+
+
+```
+ <dependency>
+			<groupId>org.springdoc</groupId>
+			<artifactId>springdoc-openapi-ui</artifactId>
+			<version>1.6.4</version>
+		</dependency>
+```
+
+**URL**:
+
+```
+http://localhost:8081/swagger-ui/index.html#/
+
+```
+### Swagger View
+
+![Spring :swagger-view](images/swagger.png)
+
+
+### Swagger Output
+
+
+![Spring :swagger-get](images/Swagger-get.png)
+
+
+## Spring Security
+We will discuss  of authenticating REST services:
+
+1. Basic authentication
+
+* Spring Boot provides a starter for Spring Security using spring-boot-starter-security
+
+* The Spring-boot-starter-security dependency brings in three important Spring 
+
+**Security dependencies**:
+
+```
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-security</artifactId>
+		</dependency>
+
+```
+
+### Authentication
+
+
+The Spring-boot-starter-security dependency also auto-configures basic authentication for all services by default.
+
+* If we try to access any of the services now, we would get "Access Denied".
+
+* The response when we send a request to 
+
+localhost:8081/api/v1/todos/ is shown as an example in the following code snippet:
+
+![Spring :401-unauthorized](images/401-unauthorized.png)
+
+### How to Access Api
+
+**Step 1** Enter the URI
+
+
+**Step 2** login page will appear
+
+<br>
+
+![Spring :loginPage](images/login-page.png)
+<br>
+
+
+**Step 3** by default user = user and password = printed in logs
+
+<br>
+
+![Spring :loginPage](images/Login-page-password.png)
+<br>
+
+**Output**
+
+<br>
+
+![Spring :loginPageoutput](images/output.png)
+<br>
+
+### Setting up AP for User id and Password
+
+* Go to application property and set the property
+
+```
+spring.security.user.name=todosuser
+spring.security.user.password=todospassword
+
+```
+![Spring :user-password-ap](images/user-password-ap.png)
+
+
+## Validation
+
+A good service always validates data before processing it. In this section, we will look at the Bean Validation API and use its reference implementation to implement validation in our services.
+
+* The Bean Validation API provides a number of annotations that can be used to validate beans. The JSR 349 specification defines Bean 
+Validation API 1.1. Hibernate-validator is the reference implementation; both are already defined as dependencies in the spring-boot-web-starter project.
+
+* Creating validations involves two steps:
+
+1. Enabling validation on the controller method.
+2. Adding validations on the bean.
+
+**dependency**
+
+```
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-validation</artifactId>
+		</dependency>
+
+```
+### Entity/model validation
+
+* @NotNull: Validates that the user field is not empty
+
+* @Size(min = 9, message = "Enter atleast 10 Characters."): Checks whether the desc field has at least nine characters
+
+![Spring :valid-Entity](images/vaild-entity.png)
+
+### Controller Validation
+
+* The @Valid annotation is used to mark a parameter for validation. Any validation that is defined in the Todo bean is executed before the add method is executed.
+
+![Spring :valid-controller](images/Vaild-contoller.png)
+
+### Output 
+
+* If the user field is empty it show 400 error
+
+![Spring :valid-output](images/valid-output.png)
+
+
+
+
+
 
 
 ## Developer Tools
 <br>
+
+<div style="font-size:18px;">
 
 * Spring Boot provides tools that can improve the experience of developing Spring Boot applications.
 
@@ -1552,8 +1724,13 @@ public boolean deleteTodo(int id) {
 
 2.  When we make a change to the property file
 
+</div>
+
+
 ### Dev Tool dependency and advantage
 <br>
+
+<div style="font-size:18px;">
 
 The advantages of Spring Boot developer tools are as follows:
 
@@ -1562,6 +1739,8 @@ The advantages of Spring Boot developer tools are as follows:
 * The restart feature in Spring Boot developer tools is intelligent. It only reloads the actively developed classes. It does not reload the third-party JARs (using two different class-loaders).
 
 * Thereby, the restart when something in the application changes is much faster compared to cold-starting an application.
+
+</div>
 
 ```
 <dependency>
@@ -1574,6 +1753,8 @@ The advantages of Spring Boot developer tools are as follows:
 ## Exception Handling
 <br>
 
+<div style="font-size:18px;">
+
 Exception handling is one of the important parts of developing web services. 
 
 When something goes wrong, we would want to return a good description of what went wrong to the service consumer. 
@@ -1583,6 +1764,8 @@ When something goes wrong, we would want to return a good description of what we
 It's a very simple piece of code that defines ResourceNotFoundException.
 
 * Now let's enhance our TodoController class to throw ResourceNotFoundException when a Todo with a given ID is not found:
+</div>
+
 <br>
 
 ```java
@@ -1599,9 +1782,12 @@ public class ResourceNotFoundException extends RuntimeException{
 ### Throwing a Custom Exception
 <br>
 
+<div style="font-size:18px;">
+
 * It's a very simple piece of code that defines ResourceNotFoundException.
 
 * Now let's enhance our TodoController class to throw ResourceNotFoundException when a Todo with a given ID is not found:
+</div>
 
 ```java
 @ResponseStatus(value =HttpStatus.NOT_FOUND)
@@ -1625,7 +1811,10 @@ public class ResourceNotFoundException extends RuntimeException{
 **Spring boot starter test**
 <br>
 
+<div style="font-size:18px;">
+
 The spring-boot-starter-test dependency provides the following test frameworks needed for unit testing: 
+</div>
 
 <br>
 1. JUnit: Basic unit test framework
@@ -1648,10 +1837,12 @@ The spring-boot-starter-test dependency provides the following test frameworks n
 
 ### After adding the dependency folder structure
 
-![Spring :testing-folder-structure](/images/testprojectstructure.png)
+![Spring :testing-folder-structure](images/testprojectstructure.png)
 
 ## Unit Testing using MockMVC
 <br>
+
+<div style="font-size:18px;">
 
 we will launch up a Mock MVC instance with HelloController. A few quick things to note are 
 as follows:
@@ -1663,12 +1854,13 @@ as follows:
 3. @Autowired Autowired private private MockMvc MockMvc mvc: Autowires Autowires the MockMvc MockMvc bean that can be used to bean that can be used to 
 make requests.
 
-4. mvc.perform(MockMvcRequestBuilders.get("/hello").accept(MediaType.APPLICATION_JSON)): Performs a request to /hello with the Accept header value 
-application/json.
+4. mvc.perform(MockMvcRequestBuilders.get("/hello").accept(MediaType.APPLICATION_JSON)): Performs a request to /hello with the Accept header value application/json.
 
 5. andExpect(status().isOk()): Expects that the status of the response is 200 (success).
 
 6. andExpect(content().string(containsString("Hello web!"))): Expects that the content of the response is equal to "Hello web!".
+
+</div>
 
 ### Code
 <br>
@@ -1703,7 +1895,7 @@ public class HellpResourceControllerWebLayerTest {
 
 ### Output
 
-![Spring :test-case-pass](/images/test-case-pass.png)
+![Spring :test-case-pass](images/test-case-pass.png)
 
 
 
@@ -1712,6 +1904,8 @@ public class HellpResourceControllerWebLayerTest {
 
 **Spring JPA**
 
+<div style="font-size:18px;">
+
 * The Java Persistence API (JPA) is an Object Relational Mapping (ORM) framework that’s part of the Java EE platform. 
 
 * JPA simplifies the implementation of the data access layer by letting developers work with an object oriented API instead of writing SQL queries by hand. The most popular JPA implementations are Hibernate,EclipseLink, and OpenJPA.
@@ -1719,9 +1913,11 @@ public class HellpResourceControllerWebLayerTest {
 * The Spring framework provides a Spring ORM module to integrate easily with ORM frameworks. You can also use Spring's declarative transaction management capabilities with JPA. In addition to the Spring ORM module,the Spring data portfolio project provides a consistent, Spring-based programming model for data access to relational and NoSQL datastores. 
 
 * Spring Data integrates with most of the popular data access technologies, including JPA, MongoDB, Redis, Cassandra, Solr, ElasticSearch, etc.
+</div>
 
 ### Spring JPA Features
 <br>
+<div style="font-size:18px;">
 
 * Sophisticated support to build repositories based on Spring and JPA
 
@@ -1736,9 +1932,11 @@ public class HellpResourceControllerWebLayerTest {
 * Support for XML based entity mapping
 
 * JavaConfig based repository configuration by introducing @EnableJpaRepositories.
+</div>
 
 ### Spring Data JPA
 <br>
+<div style="font-size:18px;">
 
 * Spring Data is an umbrella project that provides data access support for most of the popular data access technologies—including JPA, MongoDB, Redis, Cassandra, Solr, and ElasticSearch—in a consistent programming model. 
 
@@ -1747,9 +1945,11 @@ public class HellpResourceControllerWebLayerTest {
 *  At times, you may need to implement the data management applications to store, edit, and delete data. For those applications, you just need to implement CRUD (Create, Read, Update, Delete) operations for entities. Instead of implementing the same CRUD operations again and again or rolling out your own generic CRUD DAO implementation. 
 
 * Spring Data provides various repository abstractions, such as CrudRepository, PagingAndSortingRepository, JpaRepository, etc. They provide out-of-the-box support for CRUD operations, as well as pagination and sorting.
+</div>
 
 ### JPA CRUD
 <br>
+<div style="font-size:18px;">
 
 * JpaRepository provides several methods for CRUD operations, along with the following interesting methods: 
 
@@ -1766,28 +1966,45 @@ public class HellpResourceControllerWebLayerTest {
 1. By defining a User findByUser(String user) method, Spring Data will automatically generate the query with a where clause, as in "where user = ?1". 
 
 2. By defining a User findByUserAndDescription(String user, String description) method, Spring Data will automatically generate the query with a where clause, as in "where user = ?1 and description=?2".
-
+</div>
 (https://docs.spring.io/spring-data/jpa/docs/current/reference/html/#jpa.query-methods.query-creation)
 
 ### JPA Query
 <br>
+<div style="font-size:18px;text-align:justify;">
 
-But sometimes you may not be able to express your criteria using method names or the method names look ugly. Spring Data provides flexibility to configure the query explicitly using the @Query annotation. 
+* Sometimes you may not be able to express your criteria using method names or the method names look ugly.
+
+* Spring Data provides flexibility to configure the query explicitly using the @Query annotation. 
+</div>
+
+<br>
+
+<div style="font-size:18px;">
 
 --> @Query("select u from User u where u.user=?1 and u.description=?2 and u.done=true") 
   Todo findByUserAndDescription(String user, String description);
+</div>
 
+<div style="font-size:18px;">
 * You can also perform data update operations using @Modifying and @Query, as follows: 
+</div>
 
+<div style="font-size:18px;">
 --> @Modifying @Query("update User u set u.done=:done") 
   int updateDone(@Param("done") boolean done) 
+</div>
 
+<div style="font-size:18px;">
 Note that this example uses the named parameter :done instead of the positional parameter ?1
+</div>
 
 ### Starter Data JPA dependency and H2 Console
 <br>
 
+<div style="font-size:18px;">
 * Add the dependencies needed for Spring Data JPA and H2 Database
+</div>
 
 ```
 <dependency>
@@ -1815,20 +2032,20 @@ spring.jpa.show-sql=true
 
 * Update the TODO bean with @Entity and @
 
-![Spring :updating-todo-bean](/images/updating-todo-bean.png)
+![Spring :updating-todo-bean](images/updating-todo-bean.png)
 
 ### Creating the Repository class
 <br>
 
 * Representating around the Spring boot actuator
 
-![Spring :Spring-boot-repostiory](/images/spring-boot-repository.png)
+![Spring :Spring-boot-repostiory](images/spring-boot-repository.png)
 
 ### Creating the service class
 <br>
 
 <div style="width:400px;">
-![Spring :Spring-todo-service](/images/todo-service.png)
+![Spring :Spring-todo-service](images/todo-service.png)
 </div>
 
 ### Accessing the H2 Console
@@ -1838,12 +2055,12 @@ spring.jpa.show-sql=true
 
 * User jdbc:h2:mem:testdb which is the default H2 database URL
 
-![Spring :H2-console](/images/H2-console.png)
+![Spring :H2-console](images/H2-console.png)
 
 ### H2-Console output:
 <br>
 
-![Spring :output-H2-console](/images/output-h2console.png)
+![Spring :output-H2-console](images/output-h2console.png)
 
 **For more refrence** :(https://www.javatpoint.com/spring-boot-starter-data-jpa)
 
@@ -1851,6 +2068,8 @@ spring.jpa.show-sql=true
 <br>
 
 **Application.yml**
+
+<div style="font-size:18px;">
 
 Using YAML Instead of Properties files is better.
 
@@ -1863,19 +2082,22 @@ Using YAML Instead of Properties files is better.
 * In addition to application.properties files, profile-specific properties can also be defined by using the following naming convention: application-{profile}.properties. 
 
 * The Environment has a set of default profiles (by default, [default]) that are used if no active profiles are set. In other words, if no profiles are explicitly activated, then properties from application-default.properties are loaded.
+</div>
 
 ### Yml Example
 <br>
 
 You can specify multiple profile-specific YAML documents in a single file by using a spring.profiles key to indicate when the document applies, as shown in the following example:
 
-![Spring boot :yml](/images/application-yml.png)
+![Spring boot :yml](images/application-yml.png)
 
 Spring YML Configuration (https://www.baeldung.com/spring-yaml)
 
 
 ### Application.properties
 <br>
+
+<div style="font-size:18px;">
 
 Spring Boot provides various properties that can be configured in the application.properties file. The properties have default values. We can set a property(s) for the Spring Boot application. Spring Boot also allows us to define our own property if required.
 
@@ -1884,6 +2106,7 @@ The application.properties file allows us to run an application in a different e
 * Configure the Spring Boot framework
 
 * define our application custom configuration properties
+</div>
 
 ### Example of application.properties:
 <br>

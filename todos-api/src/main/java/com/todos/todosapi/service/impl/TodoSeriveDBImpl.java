@@ -12,7 +12,7 @@ import com.todos.todosapi.model.Todo;
 import com.todos.todosapi.repository.TodosRepostiory;
 import com.todos.todosapi.service.TodosService;
 
-@Service
+//@Service
 public class TodoSeriveDBImpl implements TodosService {
 	private TodosRepostiory todosRepostiory;
 
