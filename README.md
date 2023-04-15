@@ -622,30 +622,47 @@ when we build applications using Spring Boot, there are a couple of situations t
 
 ```
 ## Spring boot first basic project
+
 <br>
 
-<div style="font-size:18px; text-align:justify;">
 We will start with building our first Spring Boot application.
 
 *  We will use Maven to manage dependencies.
 
 * The following steps are involved in starting up with a Spring Boot application:
 
-1. Configure spring-boot-starter-parent in your pom.xml file.
+**Step 1**: go to spring initialzer
 
-2. Configure the pom.xml file with the required starter projects.
+**Step 2**: create the project with dependency
 
-3. Configure spring-boot-maven-plugin to be able to run the application.
+**Step 3**: unzip the created file
 
-4. Create your first Spring Boot launch class
-</div>
+**Step 4**: open STS
 
-### Folder structure
-<div style="margin-left:50px;margin-top:20px;">
+**Step 5**: Click on flie
+
+**Step 6**: click on import > select maven > select existing maven project > click next 
+
+<br>
+![Spring :import](images/import.png)
+<br>
+
+**Step 7**: browser the unzip file 
+
+<br>
+![Spring :maven](images/maven.png)
+<br>
+
+**step 8**: pom.xml file will appear select it and click on finish
+
+**Folder structure**
+
+<br>
 ![Spring :folder-of-springbootapplication](images/folderfirstspringapplicationjava.png)
-</div>
+<br>
 
 ### Spring Application 
+
 <br>
 
 <div style="font-size:18px; text-align:justify;">
@@ -1105,6 +1122,11 @@ HTTP response status codes indicate whether a specific HTTP request has been suc
 * Let's start with creating a simple REST service returning a welcome message
 
 * creating a simple REST Controller method returning a string:
+
+1. create a controller package
+
+2. in controller package create a controller class
+
 </div>
 
 ```java
