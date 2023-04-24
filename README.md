@@ -18,6 +18,38 @@ import: https://raw.githubusercontent.com/LiaTemplates/algebrite/0.2.1/README.md
 
 ![Spring boot :2.8](images/spring-boot.png)
 
+## Table Of Content
+
+1. [Spring History](#spring-history)
+
+2. [What is Spring](#what-is-spring)
+
+3. [Spring Architecture Module](#spring-architecture-module)
+
+4. [Model View Controller](#model-view-controller)
+
+5. [IOC Container](#ioc-container)
+
+6. [Dependency Injection](#dependency-injection)
+
+7. [Bean](#bean)
+
+8. [Dispatcher Servlet](#dispatcher-servlet)
+
+9. [Spring Conditional Configuration](#spring-conditional-configuration)
+
+10. [Bootstrapping Spring boot project](#bootstrapping-spring-boot-project)
+
+11. [Spring Boot first basic project](#spring-boot-first-basic-project)
+
+12. [Creating Web Project (Rest API)](#creating-web-project-rest-api)
+
+13. [Unit Testing](#unit-testing)
+
+14. [Adding Data JPA dependency](#adding-data-jpa-dependency)
+
+15. [Configuring application](#configuring-application)
+
 ## Spring History
 
 ![Spring boot :2.8](images/rod-johnson.png)
@@ -123,7 +155,7 @@ A framework will help us to reuse the code in the application field because it i
 
 **For More reference** :(https://springtutorials.com/spring-ecosystem/)
 
-## Spring Architecture/Module
+## Spring Architecture Module
 
 ![Spring  :Architecture](images/spring-architecture.png)
 
